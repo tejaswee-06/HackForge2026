@@ -1,0 +1,26 @@
+{
+  "entity_id": "demo-wallet-001",
+  "signals": {
+    "model_illicit_score": 0.72,
+    "temporal": {
+      "rapid_forwarding": 0.8,
+      "fragmentation": 0.5,
+      "consolidation": 0.2
+    },
+    "graph": {
+      "incident_path_proximity": 1.0,
+      "unusual_degree": 0.6,
+      "flow_continuity": 0.7
+    },
+    "osint": {
+      "source_quality": 0.9,
+      "independent_corrob": 0.5,
+      "indicator_match": 1.0,
+      "source_freshness": 0.8
+    },
+    "evidence": {
+      "contradiction_strength": 0.2,
+      "missing_link_strength": 0.1
+    }
+  }
+}
