@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "name": "1 overview metric equals backend graph_stats.edges",
+      "ok": true,
+      "extra": "11 vs 11"
+    },
+    {
+      "name": "1b footer shows synthetic data label",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "2 top priority signal equals backend top lead score",
+      "ok": true,
+      "extra": "71 vs 70.89"
+    },
+    {
+      "name": "3 graph renders backend nodes; expand never shrinks",
+      "ok": true,
+      "extra": "8 -> 8"
+    },
+    {
+      "name": "4 sensitivity toggle POSTs to backend and shows recomputed result",
+      "ok": true,
+      "extra": "Engine re-run complete: score 70.89 → 59.93, rank #1 → #2. 1 claim(s) depended on this clue."
+    },
+    {
+      "name": "5 hypotheses page shows before/after leading score",
+      "ok": true,
+      "extra": "51 46"
+    },
+    {
+      "name": "6 replay slider calls backend with a cutoff and excludes later events",
+      "ok": true,
+      "extra": "GET /api/investigations/inv-ghost_attacks_synthetic_v1/replay?cutoff=2026-10-01T02%3A27%3A30Z&policy=observation | 9 later events are excluded from this replay state. The back"
+    },
+    {
+      "name": "7 evaluation page renders measured benchmark",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "8 report preview is the backend HTML casebook with synthetic label",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "9 settings creates a deterministic simulation via backend and opens it",
+      "ok": true,
+      "extra": "inv-sim-benign-7-6956e7d31e\n/ ETH MAINNET · SYNTH"
+    },
+    {
+      "name": "10 benign simulation: leading hypothesis computed as H2",
+      "ok": true,
+      "extra": "H2"
+    },
+    {
+      "name": "11 live wallet without key shows explicit provider error (no silent synthetic data)",
+      "ok": true,
+      "extra": "PROVIDER_NOT_CONFIGURED: ETHERSCAN_API_KEY is not set; live wallet queries are unavailable. Use a synthetic scenario for the offline demo."
+    },
+    {
+      "name": "12 no uncaught page errors",
+      "ok": true,
+      "extra": ""
+    }
+  ],
+  "apiCalls": [
+    "GET /health",
+    "GET /api/scenarios",
+    "GET /api/investigations/inv-ghost_attacks_synthetic_v1/analysis",
+    "GET /api/investigations/inv-ghost_attacks_synthetic_v1/graph?max_edges=5000",
+    "POST /api/investigations/inv-ghost_attacks_synthetic_v1/sensitivity",
+    "GET /api/investigations/inv-ghost_attacks_synthetic_v1/replay?cutoff=2026-10-01T05%3A14%3A54Z&policy=observation",
+    "GET /api/investigations/inv-ghost_attacks_synthetic_v1/replay?cutoff=2026-10-01T02%3A27%3A30Z&policy=observation",
+    "GET /api/evaluation",
+    "POST /api/simulations",
+    "GET /api/investigations/inv-sim-benign-7-6956e7d31e/analysis",
+    "GET /api/investigations/inv-sim-benign-7-6956e7d31e/graph?max_edges=5000",
+    "POST /api/investigations"
+  ]
+}
