@@ -1,0 +1,41 @@
+{
+  "case_id": "ASTRA-DEMO-001",
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "title": "Observed wallets may belong to the same fund-flow cluster",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "kind": "on_chain_flow",
+          "direction": "supports",
+          "reliability": 0.95,
+          "strength": 0.8,
+          "source": "fixture://transaction-edge",
+          "description": "A directed transaction edge is present in the supplied graph.",
+          "verified": true
+        },
+        {
+          "evidence_id": "E2",
+          "kind": "temporal_pattern",
+          "direction": "supports",
+          "reliability": 0.65,
+          "strength": 0.5,
+          "source": "fixture://temporal-feature",
+          "description": "The observed timing pattern is similar; this alone does not prove common ownership.",
+          "verified": false
+        },
+        {
+          "evidence_id": "E3",
+          "kind": "alternative_explanation",
+          "direction": "contradicts",
+          "reliability": 0.7,
+          "strength": 0.35,
+          "source": "fixture://counter-evidence",
+          "description": "An alternative explanation may account for the observed relationship.",
+          "verified": false
+        }
+      ]
+    }
+  ]
+}
