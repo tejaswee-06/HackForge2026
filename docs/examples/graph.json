@@ -1,0 +1,455 @@
+{
+  "analysis_version": "astra-1.0.0",
+  "data_cutoff": "2026-10-01T02:34:00Z",
+  "data_mode": "synthetic",
+  "edges": [
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000001,
+      "chain_id": 1,
+      "edge_id": "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "100.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "100000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a000",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a001",
+      "timestamp": "2026-10-01T02:14:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000001,
+      "chain_id": 1,
+      "edge_id": "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "60.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "60000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a000",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a002",
+      "timestamp": "2026-10-01T02:15:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000002,
+      "chain_id": 1,
+      "edge_id": "1:0xe23ecb32400b6f3dd0e6b844df1ad10cd84dc720af1152c8e9f35a474b243b32:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "7.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "7000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000b001",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000b002",
+      "timestamp": "2026-10-01T02:17:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xe23ecb32400b6f3dd0e6b844df1ad10cd84dc720af1152c8e9f35a474b243b32"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000003,
+      "chain_id": 1,
+      "edge_id": "1:0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "99.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "99000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a001",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a003",
+      "timestamp": "2026-10-01T02:19:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000004,
+      "chain_id": 1,
+      "edge_id": "1:0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "30.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "30000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a002",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a004",
+      "timestamp": "2026-10-01T02:20:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000004,
+      "chain_id": 1,
+      "edge_id": "1:0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "29.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "29000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a002",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a005",
+      "timestamp": "2026-10-01T02:21:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7"
+    },
+    {
+      "asset_id": "1:erc20:0x000000000000000000000000000000000000f001",
+      "asset_symbol": "SYNTH",
+      "asset_type": "erc20",
+      "block_number": 18000005,
+      "chain_id": 1,
+      "edge_id": "1:0xa3c1900f295e374bbf65d1713060439f836f68f2526dd5187ee49d28fe9827fe:log-12",
+      "event_type": "erc20_transfer",
+      "log_index": 12,
+      "normalized_value": "1.000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "1000000",
+      "source": "1:0x000000000000000000000000000000000000a002",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a004",
+      "timestamp": "2026-10-01T02:22:00Z",
+      "token_contract": "0x000000000000000000000000000000000000f001",
+      "token_decimals": 6,
+      "transaction_hash": "0xa3c1900f295e374bbf65d1713060439f836f68f2526dd5187ee49d28fe9827fe"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000005,
+      "chain_id": 1,
+      "edge_id": "1:0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "98.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "98000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a003",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a005",
+      "timestamp": "2026-10-01T02:23:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4"
+    },
+    {
+      "asset_id": "1:erc20:0x000000000000000000000000000000000000f001",
+      "asset_symbol": "SYNTH",
+      "asset_type": "erc20",
+      "block_number": 18000006,
+      "chain_id": 1,
+      "edge_id": "1:0xde2f41b245e96d4228b04d36a5f0009ec607b58f8444399644c48053d61fad27:log-3",
+      "event_type": "erc20_transfer",
+      "log_index": 3,
+      "normalized_value": "0.400000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "400000",
+      "source": "1:0x000000000000000000000000000000000000a004",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a007",
+      "timestamp": "2026-10-01T02:26:00Z",
+      "token_contract": "0x000000000000000000000000000000000000f001",
+      "token_decimals": 6,
+      "transaction_hash": "0xde2f41b245e96d4228b04d36a5f0009ec607b58f8444399644c48053d61fad27"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000007,
+      "chain_id": 1,
+      "edge_id": "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "120.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "120000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a005",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a006",
+      "timestamp": "2026-10-01T02:29:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000009,
+      "chain_id": 1,
+      "edge_id": "1:0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b:tx",
+      "event_type": "native_transfer",
+      "log_index": null,
+      "normalized_value": "5.000000000000000000",
+      "provenance": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "raw_value": "5000000000000000000",
+      "source": "1:0x000000000000000000000000000000000000a006",
+      "status": "success",
+      "target": "1:0x000000000000000000000000000000000000a003",
+      "timestamp": "2026-10-01T02:34:00Z",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b"
+    }
+  ],
+  "filters": {
+    "asset_id": null,
+    "end_time": null,
+    "start_time": null
+  },
+  "generated_at": "2026-10-17T22:52:40.248114Z",
+  "investigation_id": "inv-ghost_attacks_synthetic_v1",
+  "limitations": [
+    "ALL RECORDS IN THIS SCENARIO ARE SYNTHETIC TEST DATA. Addresses, hashes, amounts and timestamps are invented and do not correspond to any real blockchain activity or real person.",
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution.",
+    "Graph connectivity and timing are observed relationships, not proof of common ownership."
+  ],
+  "nodes": [
+    {
+      "address": "0x000000000000000000000000000000000000a000",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:14:00Z",
+      "gross_in_raw": {},
+      "gross_out_raw": {
+        "1:native": "160000000000000000000"
+      },
+      "in_transfer_count": 0,
+      "last_seen": "2026-10-01T02:15:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a000",
+      "out_transfer_count": 2
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a001",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:14:00Z",
+      "gross_in_raw": {
+        "1:native": "100000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:native": "99000000000000000000"
+      },
+      "in_transfer_count": 1,
+      "last_seen": "2026-10-01T02:19:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a001",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a002",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:15:00Z",
+      "gross_in_raw": {
+        "1:native": "60000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:erc20:0x000000000000000000000000000000000000f001": "1000000",
+        "1:native": "59000000000000000000"
+      },
+      "in_transfer_count": 1,
+      "last_seen": "2026-10-01T02:22:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a002",
+      "out_transfer_count": 3
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a003",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:19:00Z",
+      "gross_in_raw": {
+        "1:native": "104000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:native": "98000000000000000000"
+      },
+      "in_transfer_count": 2,
+      "last_seen": "2026-10-01T02:34:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a003",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a004",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:20:00Z",
+      "gross_in_raw": {
+        "1:erc20:0x000000000000000000000000000000000000f001": "1000000",
+        "1:native": "30000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:erc20:0x000000000000000000000000000000000000f001": "400000"
+      },
+      "in_transfer_count": 2,
+      "last_seen": "2026-10-01T02:26:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a004",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a005",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:21:00Z",
+      "gross_in_raw": {
+        "1:native": "127000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:native": "120000000000000000000"
+      },
+      "in_transfer_count": 2,
+      "last_seen": "2026-10-01T02:29:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a005",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a006",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:29:00Z",
+      "gross_in_raw": {
+        "1:native": "120000000000000000000"
+      },
+      "gross_out_raw": {
+        "1:native": "5000000000000000000"
+      },
+      "in_transfer_count": 1,
+      "last_seen": "2026-10-01T02:34:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a006",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000a007",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:26:00Z",
+      "gross_in_raw": {
+        "1:erc20:0x000000000000000000000000000000000000f001": "400000"
+      },
+      "gross_out_raw": {},
+      "in_transfer_count": 1,
+      "last_seen": "2026-10-01T02:26:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000a007",
+      "out_transfer_count": 0
+    },
+    {
+      "address": "0x000000000000000000000000000000000000b001",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:17:00Z",
+      "gross_in_raw": {},
+      "gross_out_raw": {
+        "1:native": "7000000000000000000"
+      },
+      "in_transfer_count": 0,
+      "last_seen": "2026-10-01T02:17:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000b001",
+      "out_transfer_count": 1
+    },
+    {
+      "address": "0x000000000000000000000000000000000000b002",
+      "chain_id": 1,
+      "first_seen": "2026-10-01T02:17:00Z",
+      "gross_in_raw": {
+        "1:native": "7000000000000000000"
+      },
+      "gross_out_raw": {},
+      "in_transfer_count": 1,
+      "last_seen": "2026-10-01T02:17:00Z",
+      "node_id": "1:0x000000000000000000000000000000000000b002",
+      "out_transfer_count": 0
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "data_mode": "synthetic",
+      "provider": "astra-fixture",
+      "reference": "ghost_attacks_synthetic_v1@1.0.0",
+      "retrieved_at": "2026-10-01T00:00:00Z"
+    }
+  ],
+  "stats": {
+    "edge_count": 11,
+    "excluded_non_success_events": 1,
+    "node_count": 10,
+    "truncated": false
+  }
+}
