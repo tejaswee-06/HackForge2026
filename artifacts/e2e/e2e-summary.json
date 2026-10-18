@@ -1,0 +1,165 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "investigation_id": "inv-sim-incident-2026-9291ebe663",
+  "simulation_config": {
+    "seed": 2026,
+    "scenario_kind": "incident",
+    "depth": 4,
+    "branching": 3
+  },
+  "checks": 25,
+  "passed": 25,
+  "elapsed_s": 0.439,
+  "results": [
+    {
+      "step": 1,
+      "check": "backend healthy, offline demo available",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 1,
+      "check": "health exposes no credentials",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 2,
+      "check": "simulation investigation created (201, synthetic)",
+      "ok": true,
+      "detail": "inv-sim-incident-2026-9291ebe663"
+    },
+    {
+      "step": 2,
+      "check": "same seed/config -> same investigation id (deterministic)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 3,
+      "check": "normalized transactions exist",
+      "ok": true,
+      "detail": "107 transfers"
+    },
+    {
+      "step": 3,
+      "check": "every transfer carries synthetic provenance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 3,
+      "check": "graph built from the same records",
+      "ok": true,
+      "detail": "96 nodes / 107 edges"
+    },
+    {
+      "step": 3,
+      "check": "duplicates dropped at ingestion",
+      "ok": true,
+      "detail": "2"
+    },
+    {
+      "step": 4,
+      "check": "bounded path trace returns time-ordered paths",
+      "ok": true,
+      "detail": "50 paths"
+    },
+    {
+      "step": 4,
+      "check": "Dijkstra fastest route to the top lead",
+      "ok": true,
+      "detail": "1 hops, cost 3600.0"
+    },
+    {
+      "step": 5,
+      "check": "ranked leads with score components and reasons",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 5,
+      "check": "scores labelled as non-probabilistic",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 5,
+      "check": "deterministic ranking",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 6,
+      "check": "OSINT documents collected with provenance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 6,
+      "check": "indicator matches graded",
+      "ok": true,
+      "detail": "{\"ambiguous\": 1, \"exact\": 10, \"strong\": 1}"
+    },
+    {
+      "step": 6,
+      "check": "simulated source outage reported, not hidden",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 7,
+      "check": "contradictory evidence represented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 7,
+      "check": "disputed claims link support AND contradiction evidence",
+      "ok": true,
+      "detail": "4 disputed claims"
+    },
+    {
+      "step": 8,
+      "check": "sensitivity re-runs the engine and changes the result",
+      "ok": true,
+      "detail": "EV-OSINT-doc-29f2794ee3dc:i001: 71.7 -> 60.47 (rank 1 -> 1)"
+    },
+    {
+      "step": 9,
+      "check": "replay excludes records after the cutoff",
+      "ok": true,
+      "detail": "cutoff 2026-10-01T02:37:43Z: 71 transfers, 7 docs excluded"
+    },
+    {
+      "step": 9,
+      "check": "replay is reproducible",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 10,
+      "check": "JSON report matches on-screen leads",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 10,
+      "check": "report records version, config, snapshot and limitations",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 10,
+      "check": "report labelled SYNTHETIC",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "step": 10,
+      "check": "HTML report served with restrictive CSP",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
