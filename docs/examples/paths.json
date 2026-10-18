@@ -1,0 +1,209 @@
+{
+  "analysis_version": "astra-1.0.0",
+  "data_cutoff": "2026-10-01T02:34:00Z",
+  "data_mode": "synthetic",
+  "generated_at": "2026-10-17T22:52:40.251169Z",
+  "investigation_id": "inv-ghost_attacks_synthetic_v1",
+  "limitations": [
+    "ALL RECORDS IN THIS SCENARIO ARE SYNTHETIC TEST DATA. Addresses, hashes, amounts and timestamps are invented and do not correspond to any real blockchain activity or real person.",
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution.",
+    "Graph connectivity and timing are observed relationships, not proof of common ownership."
+  ],
+  "notes": [
+    "Paths are observed transfer sequences (single asset, no repeated wallet, time-ordered). They do not prove common ownership.",
+    "bottleneck_raw is the smallest edge value on the path (an upper bound), not an amount proven to have traversed it."
+  ],
+  "parameters": {
+    "asset_id": "1:native",
+    "end_time": null,
+    "enforce_time_order": true,
+    "max_depth": 6,
+    "max_results": 50,
+    "start_time": null
+  },
+  "paths": [
+    {
+      "asset_id": "1:native",
+      "bottleneck_normalized": "30.000000000000000000",
+      "bottleneck_raw": "30000000000000000000",
+      "edges": [
+        {
+          "event_id": "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a000",
+          "log_index": null,
+          "normalized_value": "60.000000000000000000",
+          "raw_value": "60000000000000000000",
+          "timestamp": "2026-10-01T02:15:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a002",
+          "transaction_hash": "0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4"
+        },
+        {
+          "event_id": "1:0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a002",
+          "log_index": null,
+          "normalized_value": "30.000000000000000000",
+          "raw_value": "30000000000000000000",
+          "timestamp": "2026-10-01T02:20:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a004",
+          "transaction_hash": "0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65"
+        }
+      ],
+      "end_time": "2026-10-01T02:20:00Z",
+      "event_ids": [
+        "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+        "1:0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65:tx"
+      ],
+      "hops": 2,
+      "node_ids": [
+        "1:0x000000000000000000000000000000000000a000",
+        "1:0x000000000000000000000000000000000000a002",
+        "1:0x000000000000000000000000000000000000a004"
+      ],
+      "path_id": "daf224d89118",
+      "start_time": "2026-10-01T02:15:00Z",
+      "terminated_reason": "leaf"
+    },
+    {
+      "asset_id": "1:native",
+      "bottleneck_normalized": "98.000000000000000000",
+      "bottleneck_raw": "98000000000000000000",
+      "edges": [
+        {
+          "event_id": "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a000",
+          "log_index": null,
+          "normalized_value": "100.000000000000000000",
+          "raw_value": "100000000000000000000",
+          "timestamp": "2026-10-01T02:14:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a001",
+          "transaction_hash": "0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80"
+        },
+        {
+          "event_id": "1:0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a001",
+          "log_index": null,
+          "normalized_value": "99.000000000000000000",
+          "raw_value": "99000000000000000000",
+          "timestamp": "2026-10-01T02:19:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a003",
+          "transaction_hash": "0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6"
+        },
+        {
+          "event_id": "1:0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a003",
+          "log_index": null,
+          "normalized_value": "98.000000000000000000",
+          "raw_value": "98000000000000000000",
+          "timestamp": "2026-10-01T02:23:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a005",
+          "transaction_hash": "0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4"
+        },
+        {
+          "event_id": "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a005",
+          "log_index": null,
+          "normalized_value": "120.000000000000000000",
+          "raw_value": "120000000000000000000",
+          "timestamp": "2026-10-01T02:29:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a006",
+          "transaction_hash": "0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89"
+        }
+      ],
+      "end_time": "2026-10-01T02:29:00Z",
+      "event_ids": [
+        "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+        "1:0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6:tx",
+        "1:0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4:tx",
+        "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx"
+      ],
+      "hops": 4,
+      "node_ids": [
+        "1:0x000000000000000000000000000000000000a000",
+        "1:0x000000000000000000000000000000000000a001",
+        "1:0x000000000000000000000000000000000000a003",
+        "1:0x000000000000000000000000000000000000a005",
+        "1:0x000000000000000000000000000000000000a006"
+      ],
+      "path_id": "511c7adf8edc",
+      "start_time": "2026-10-01T02:14:00Z",
+      "terminated_reason": "cycle_blocked"
+    },
+    {
+      "asset_id": "1:native",
+      "bottleneck_normalized": "5.000000000000000000",
+      "bottleneck_raw": "5000000000000000000",
+      "edges": [
+        {
+          "event_id": "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a000",
+          "log_index": null,
+          "normalized_value": "60.000000000000000000",
+          "raw_value": "60000000000000000000",
+          "timestamp": "2026-10-01T02:15:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a002",
+          "transaction_hash": "0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4"
+        },
+        {
+          "event_id": "1:0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a002",
+          "log_index": null,
+          "normalized_value": "29.000000000000000000",
+          "raw_value": "29000000000000000000",
+          "timestamp": "2026-10-01T02:21:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a005",
+          "transaction_hash": "0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7"
+        },
+        {
+          "event_id": "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a005",
+          "log_index": null,
+          "normalized_value": "120.000000000000000000",
+          "raw_value": "120000000000000000000",
+          "timestamp": "2026-10-01T02:29:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a006",
+          "transaction_hash": "0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89"
+        },
+        {
+          "event_id": "1:0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b:tx",
+          "from_node": "1:0x000000000000000000000000000000000000a006",
+          "log_index": null,
+          "normalized_value": "5.000000000000000000",
+          "raw_value": "5000000000000000000",
+          "timestamp": "2026-10-01T02:34:00Z",
+          "to_node": "1:0x000000000000000000000000000000000000a003",
+          "transaction_hash": "0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b"
+        }
+      ],
+      "end_time": "2026-10-01T02:34:00Z",
+      "event_ids": [
+        "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+        "1:0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7:tx",
+        "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx",
+        "1:0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b:tx"
+      ],
+      "hops": 4,
+      "node_ids": [
+        "1:0x000000000000000000000000000000000000a000",
+        "1:0x000000000000000000000000000000000000a002",
+        "1:0x000000000000000000000000000000000000a005",
+        "1:0x000000000000000000000000000000000000a006",
+        "1:0x000000000000000000000000000000000000a003"
+      ],
+      "path_id": "69e3ed93f28d",
+      "start_time": "2026-10-01T02:15:00Z",
+      "terminated_reason": "leaf"
+    }
+  ],
+  "sources": [
+    {
+      "data_mode": "synthetic",
+      "provider": "astra-fixture",
+      "reference": "ghost_attacks_synthetic_v1@1.0.0",
+      "retrieved_at": "2026-10-01T00:00:00Z"
+    }
+  ],
+  "start_address": "0x000000000000000000000000000000000000a000",
+  "start_found": true,
+  "truncated_by_budget": false,
+  "truncated_by_limit": false
+}
