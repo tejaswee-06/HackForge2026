@@ -1,0 +1,21 @@
+# ASTRA Model Card — Fill after training
+
+- Model/version:
+- Dataset release/source:
+- Dataset file checksums:
+- Training date:
+- Label mapping verified against:
+- Feature list/version:
+- Train/validation/test time steps:
+- Preprocessing:
+- Estimator and parameters:
+- Threshold-selection procedure:
+- Precision / recall / F1:
+- PR-AUC / ROC-AUC:
+- Confusion matrix:
+- Performance by time step:
+- Known data leakage checks:
+- Limitations:
+- Intended use:
+- Prohibited interpretations:
+- Responsible maintainer:
