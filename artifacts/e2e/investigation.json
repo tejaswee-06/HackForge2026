@@ -1,0 +1,64 @@
+{
+  "investigation_id": "inv-sim-incident-2026-9291ebe663",
+  "data_mode": "synthetic",
+  "analysis_version": "astra-1.0.0",
+  "generated_at": "2026-10-17T22:50:43.811261Z",
+  "data_cutoff": "2026-10-01T07:56:49Z",
+  "limitations": [
+    "ALL RECORDS ARE SYNTHETIC / SIMULATED (generator astra-sim-v1). Addresses, hashes, documents and timestamps are invented.",
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution."
+  ],
+  "sources": [
+    {
+      "provider": "astra-simulator",
+      "data_mode": "synthetic",
+      "retrieved_at": "2026-10-01T02:14:00Z",
+      "reference": "sim-incident-2026-9291ebe663 (seed=2026)"
+    }
+  ],
+  "status": "ready",
+  "chain_id": 1,
+  "scenario_id": "sim-incident-2026-9291ebe663",
+  "start_address": "0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+  "scope": {
+    "type": "simulation",
+    "scenario_id": "sim-incident-2026-9291ebe663",
+    "seed": 2026,
+    "scenario_kind": "incident"
+  },
+  "summary": {
+    "event_count": 108,
+    "node_count": 96,
+    "edge_count": 107,
+    "weakly_connected_components": 5,
+    "assets": [
+      {
+        "asset_id": "1:erc20:0xdb5ee5c254d21c5c45b12a3fd4b38b3d7a5017b1",
+        "edge_count": 1
+      },
+      {
+        "asset_id": "1:native",
+        "edge_count": 106
+      }
+    ],
+    "excluded_non_success_events": 1,
+    "duplicates_dropped": 2,
+    "duplicate_conflicts": [],
+    "rejected_rows": 0,
+    "rejected_detail": [],
+    "osint_documents": 8,
+    "osint_sources": 8
+  },
+  "source_status": {
+    "providers": [
+      {
+        "provider": "astra-simulator",
+        "data_mode": "synthetic",
+        "retrieved_at": "2026-10-01T02:14:00Z",
+        "reference": "sim-incident-2026-9291ebe663 (seed=2026)"
+      }
+    ],
+    "degraded_mode": false
+  },
+  "created_at": "2026-10-17T22:50:43.810921Z"
+}
