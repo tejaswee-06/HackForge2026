@@ -1,0 +1,102 @@
+{
+  "scenario_id": "ghost_attacks_synthetic_v1",
+  "dataset_version": "1.0.0",
+  "data_mode": "synthetic",
+  "synthetic": true,
+  "notice": "ALL DOCUMENTS ARE SYNTHETIC TEST DATA on a reserved .invalid domain; they describe no real event or person.",
+  "documents": [
+    {
+      "source_id": "syn-threat-report",
+      "source_name": "Synthetic Threat Intel Blog",
+      "source_type": "threat_report",
+      "publisher_group": "synthetic-threat-intel",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/reports/incident-0142",
+      "title": "Lending pool exploit - initial findings",
+      "published_at": "2026-10-01T02:59:00Z",
+      "retrieved_at": "2026-10-01T03:04:00Z",
+      "reliability": 0.8,
+      "reliability_rationale": "Rubric: named security publisher, first-hand monitoring claim, no attribution.",
+      "text": "SYNTHETIC INCIDENT REPORT (test data). Our monitoring observed a protocol exploit at 02:14 UTC on 1 Oct 2026. The attacker wallet 0x000000000000000000000000000000000000a000 drained the lending pool. Stolen funds were forwarded to 0x000000000000000000000000000000000000a001 within minutes. A second hop sent part of the stolen funds to 0x000000000000000000000000000000000000a005. Funds later reached 0x000000000000000000000000000000000000a006, which we consider part of the exploit flow. We have not attributed the activity to any person or organisation."
+    },
+    {
+      "source_id": "syn-repo",
+      "source_name": "Synthetic GitHub issue",
+      "source_type": "repository",
+      "publisher_group": "synthetic-repo-maintainers",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/repo/issues/77",
+      "title": "Tracking: exploit transactions",
+      "published_at": "2026-10-01T04:14:00Z",
+      "retrieved_at": "2026-10-01T04:19:00Z",
+      "reliability": 0.5,
+      "reliability_rationale": "Rubric: community issue tracker; unverified contributor claims.",
+      "text": "Tracking issue for the exploit. Transaction 0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89 moved stolen funds onward. One recipient looks like 0x0000\u2026a003 in the explorer screenshot. Someone else posted 0x0000\u2026001 but that shortened form is unclear. Contributor pasted 0x000000000000000000000000000000000000A002 as another relay of the exploit."
+    },
+    {
+      "source_id": "syn-label-registry",
+      "source_name": "Synthetic Address Label Registry",
+      "source_type": "label_registry",
+      "publisher_group": "synthetic-labels",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/labels/a005",
+      "title": "Label: exchange deposit cluster",
+      "published_at": "2026-09-01T02:14:00Z",
+      "retrieved_at": "2026-10-01T05:14:00Z",
+      "reliability": 0.7,
+      "reliability_rationale": "Rubric: curated public label set; labels can be outdated.",
+      "text": "Address 0x000000000000000000000000000000000000a005 is labelled as a centralized exchange deposit address (hot wallet cluster)."
+    },
+    {
+      "source_id": "syn-mirror",
+      "source_name": "Synthetic News Mirror",
+      "source_type": "threat_report",
+      "publisher_group": "synthetic-news-mirror",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/mirror/incident-0142",
+      "title": "Lending pool exploit (republished)",
+      "published_at": "2026-10-01T05:14:00Z",
+      "retrieved_at": "2026-10-01T05:24:00Z",
+      "reliability": 0.6,
+      "reliability_rationale": "Rubric: aggregator republishing another publisher's text.",
+      "text": "SYNTHETIC INCIDENT REPORT (test data). Our monitoring observed a protocol exploit at 02:14 UTC on 1 Oct 2026. The attacker wallet 0x000000000000000000000000000000000000a000 drained the lending pool. Stolen funds were forwarded to 0x000000000000000000000000000000000000a001 within minutes. A second hop sent part of the stolen funds to 0x000000000000000000000000000000000000a005. Funds later reached 0x000000000000000000000000000000000000a006, which we consider part of the exploit flow. We have not attributed the activity to any person or organisation."
+    },
+    {
+      "source_id": "syn-forum",
+      "source_name": "Synthetic Community Forum",
+      "source_type": "forum",
+      "publisher_group": "synthetic-forum",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/forum/thread/9",
+      "title": "Phishing report (2025)",
+      "published_at": "2025-06-01T09:00:00Z",
+      "retrieved_at": "2026-10-01T06:14:00Z",
+      "reliability": 0.3,
+      "reliability_rationale": "Rubric: anonymous forum post; old.",
+      "text": "Warning: 0x000000000000000000000000000000000000a004 was used in a phishing scam last year."
+    },
+    {
+      "source_id": "syn-analyst",
+      "source_name": "Synthetic Analyst Note",
+      "source_type": "analyst_note",
+      "publisher_group": "synthetic-analyst",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/notes/analyst-3",
+      "title": "Possible mixer deposit",
+      "published_at": null,
+      "retrieved_at": "2026-10-01T06:44:00Z",
+      "reliability": 0.5,
+      "reliability_rationale": "Rubric: internal analyst observation; publication time not recorded.",
+      "text": "Possible mixer deposit: 0x000000000000000000000000000000000000a007 sent funds into a privacy pool. Exit side not observed."
+    },
+    {
+      "source_id": "syn-feed-outage",
+      "source_name": "Synthetic Threat Feed",
+      "source_type": "threat_feed",
+      "publisher_group": "synthetic-feed",
+      "url": "https://synthetic.astra.invalid/ghost-attacks/feed/latest",
+      "title": null,
+      "published_at": null,
+      "retrieved_at": "2026-10-01T03:14:00Z",
+      "reliability": 0.6,
+      "reliability_rationale": "Rubric: automated feed.",
+      "text": "",
+      "collection_status": "failed",
+      "error": "HTTP 503 from feed (simulated provider outage)"
+    }
+  ]
+}
