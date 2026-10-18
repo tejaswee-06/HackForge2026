@@ -1,0 +1,22 @@
+{
+  "analysis_version": "astra-1.0.0",
+  "generated_at": "2026-10-17T22:52:40.240986Z",
+  "scenarios": [
+    {
+      "chain_id": 1,
+      "data_mode": "synthetic",
+      "dataset_version": "1.0.0",
+      "description": "Small deterministic simulated incident: a split, a multi-hop path, a cycle, a duplicate record, a failed transaction, an unlike-token transfer and a disconnected pair. Amounts are scaled-down placeholders.",
+      "event_count": 13,
+      "investigation_id": "inv-ghost_attacks_synthetic_v1",
+      "limitations": [
+        "Simulated incident; results demonstrate the pipeline, not real-world attribution.",
+        "Graph connectivity and timing are observed relationships, not proof of common ownership."
+      ],
+      "name": "Ghost Attacks - simulated $42M exploit flow (SYNTHETIC)",
+      "scenario_id": "ghost_attacks_synthetic_v1",
+      "start_address": "0x000000000000000000000000000000000000a000",
+      "synthetic": true
+    }
+  ]
+}
