@@ -1,0 +1,12 @@
+{
+  "error": {
+    "code": "PROVIDER_NOT_CONFIGURED",
+    "degraded_mode": true,
+    "details": {
+      "hint": "Use POST /api/investigations with a synthetic scenario_id for the offline demo."
+    },
+    "message": "ETHERSCAN_API_KEY is not set; live wallet queries are unavailable. Use a synthetic scenario for the offline demo.",
+    "provider": "etherscan",
+    "retryable": false
+  }
+}
