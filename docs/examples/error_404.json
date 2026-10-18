@@ -1,0 +1,10 @@
+{
+  "error": {
+    "code": "INVESTIGATION_NOT_FOUND",
+    "degraded_mode": false,
+    "details": null,
+    "message": "No investigation with id 'does-not-exist'.",
+    "provider": null,
+    "retryable": false
+  }
+}
