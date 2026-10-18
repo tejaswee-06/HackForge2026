@@ -1,0 +1,42 @@
+{
+  "analysis_version": "astra-1.0.0",
+  "default_data_mode": "synthetic",
+  "degraded_mode": true,
+  "degraded_reason": "Live provider not configured; only synthetic scenarios can be served.",
+  "engine": {
+    "status": "ok",
+    "trained_model_loaded": false,
+    "version": "astra-intel-engine-1.0.0"
+  },
+  "generated_at": "2026-10-17T22:52:40.238378+00:00",
+  "investigations_in_memory": 2,
+  "offline_demo_available": true,
+  "providers": {
+    "etherscan": {
+      "cache_entries": 0,
+      "cache_ttl_s": 300,
+      "configured": false,
+      "last_error_code": null,
+      "last_success_at": null,
+      "status": "not_configured"
+    },
+    "fixture": {
+      "data_mode": "synthetic",
+      "status": "ok"
+    },
+    "github_issues_search": {
+      "authenticated": false,
+      "enabled": false,
+      "last_error_code": null,
+      "status": "disabled"
+    },
+    "simulator": {
+      "data_mode": "synthetic",
+      "generator": "astra-sim-v1",
+      "status": "ok"
+    }
+  },
+  "scenarios_loaded": 1,
+  "service": "astra-backend",
+  "status": "ok"
+}
