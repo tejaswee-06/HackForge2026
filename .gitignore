@@ -1,0 +1,50 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node.js
+node_modules/
+dist/
+build/
+.next/
+coverage/
+.npm/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+*.tmp
+
+# Generated model and large binary artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
