@@ -1,0 +1,4795 @@
+{
+  "investigation_id": "inv-sim-incident-2026-9291ebe663",
+  "data_mode": "synthetic",
+  "analysis_version": "astra-1.0.0",
+  "generated_at": "2026-10-17T22:50:44.112600+00:00",
+  "data_cutoff": "2026-10-01T02:37:43Z",
+  "limitations": [
+    "SYNTHETIC / SIMULATED data: results demonstrate the pipeline, not real-world findings.",
+    "Priority scores are transparent prioritisation aids (0-100), not probabilities, and are not calibrated.",
+    "Graph connectivity, timing similarity and value allocation are observed relationships, not proof of common ownership, identity, or that the same funds moved.",
+    "OSINT matches are source-reported claims; a mention does not establish control or wrongdoing.",
+    "Flow decomposition uses a FIFO allocation assumption; other policies allocate value differently.",
+    "No trained model is loaded: model_illicit_score is not applicable and excluded from the score.",
+    "ALL RECORDS ARE SYNTHETIC / SIMULATED (generator astra-sim-v1). Addresses, hashes, documents and timestamps are invented.",
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution."
+  ],
+  "sources": [
+    {
+      "provider": "astra-simulator",
+      "data_mode": "synthetic",
+      "retrieved_at": "2026-10-01T02:14:00Z",
+      "reference": "sim-incident-2026-9291ebe663 (seed=2026)"
+    }
+  ],
+  "data_label": "SYNTHETIC / SIMULATED",
+  "synthetic": true,
+  "snapshot_id": "359d2a0769ac7277",
+  "config_hash": "cf5fdbd5ac50",
+  "engine_version": "astra-intel-engine-1.0.0",
+  "cutoff": "2026-10-01T02:37:43Z",
+  "policy": "observation",
+  "leads": [
+    {
+      "lead_id": "LD-51ccb63b28c294",
+      "rank": 1,
+      "node_id": "1:0x51ccb63be696a09a93274386814191e9a628c294",
+      "address": "0x51ccb63be696a09a93274386814191e9a628c294",
+      "title": "Rapid forwarding relay",
+      "priority_score": 58.9,
+      "priority_tier": "medium_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 1.0,
+          "weight": 7.0,
+          "points": 7.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 1.0,
+          "weight": 15.0,
+          "points": 15.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 1.0,
+          "weight": 5.0,
+          "points": 5.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 1.0,
+          "weight": 15.0,
+          "points": 15.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 1.0,
+          "weight": 7.0,
+          "points": 7.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 1.0,
+          "weight": 5.0,
+          "points": 5.0,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 1.0,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 1.0,
+          "unusual_degree": 1.0,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 1,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:19:57Z",
+        "in_transfers": 2,
+        "out_transfers": 5,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 5,
+        "degree_percentile": 1.0,
+        "receipt_to_forward_deltas_s": [
+          30,
+          55,
+          146,
+          231,
+          360
+        ],
+        "median_receipt_to_forward_s": 146.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 1.0,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "167126297664730329908",
+            "total_in_raw": "167126297664730329908",
+            "symbol": "ETH",
+            "traced_in": "167.126297664730329908",
+            "total_in": "167.126297664730329908",
+            "continuity": 1.0,
+            "share_of_initial": 0.4007,
+            "residual_raw": "5807726021577478964",
+            "residual": "5.807726021577478964"
+          }
+        },
+        "first_seen": "2026-10-01T02:19:57Z",
+        "last_seen": "2026-10-01T02:27:27Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Time-ordered path from origin: 1 hop(s)",
+        "Rapid forwarding ratio 1.00 (median 146s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Splits to 5 recipients",
+        "Degree percentile 1.00 within this graph"
+      ],
+      "status": "candidate",
+      "support_evidence_ids": [
+        "EV-SHAPE-0x51ccb63be696a09a93274386814191e9a628c294",
+        "EV-TEMP-0x51ccb63be696a09a93274386814191e9a628c294"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x51ccb63be696a09a93274386814191e9a628c294",
+        "EV-GAP-0x51ccb63be696a09a93274386814191e9a628c294",
+        "EV-PATH-0x51ccb63be696a09a93274386814191e9a628c294"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294"
+        ],
+        "hops": 1,
+        "cost": 3600.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-51ccb63b28c294",
+        "leading": "H1",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3533,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-SHAPE-0x51ccb63be696a09a93274386814191e9a628c294",
+              "EV-TEMP-0x51ccb63be696a09a93274386814191e9a628c294"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.98,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.2693,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.8296,
+            "separation": 0.2033,
+            "evidence_mass": 0.2904
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-51ccb63b28c294",
+        "leading": "H1",
+        "single_evidence_removal_checks": [
+          {
+            "removed_evidence_id": "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3533,
+            "score_after": 0.2885,
+            "score_delta": -0.0648,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-SHAPE-0x51ccb63be696a09a93274386814191e9a628c294",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3533,
+            "score_after": 0.3154,
+            "score_delta": -0.0379,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-TEMP-0x51ccb63be696a09a93274386814191e9a628c294",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3533,
+            "score_after": 0.2746,
+            "score_delta": -0.0787,
+            "conclusion_changes": true
+          }
+        ],
+        "brittle": true,
+        "what_would_weaken_leading": [
+          "A source-backed service/exchange label for the origin or this address.",
+          "Evidence that the transfers are routine (regular schedule, long-standing counterparties).",
+          "Removal or downgrade of the strongest incident-association source (see checks)."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x51cc\u2026c294; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-381dfe769a99f9",
+      "rank": 2,
+      "node_id": "1:0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+      "address": "0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+      "title": "Rapid forwarding relay",
+      "priority_score": 53.57,
+      "priority_tier": "medium_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 1.0,
+          "weight": 15.0,
+          "points": 15.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.9219,
+          "weight": 5.0,
+          "points": 4.61,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 1.0,
+          "weight": 15.0,
+          "points": 15.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.9219,
+          "weight": 5.0,
+          "points": 4.61,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.5,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 1.0,
+          "unusual_degree": 0.9219,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 1,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:25:48Z",
+        "in_transfers": 2,
+        "out_transfers": 3,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 3,
+        "degree_percentile": 0.9219,
+        "receipt_to_forward_deltas_s": [
+          31,
+          135,
+          517
+        ],
+        "median_receipt_to_forward_s": 135.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.5,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "249908471839623423591",
+            "total_in_raw": "249908471839623423591",
+            "symbol": "ETH",
+            "traced_in": "249.908471839623423591",
+            "total_in": "249.908471839623423591",
+            "continuity": 1.0,
+            "share_of_initial": 0.5993,
+            "residual_raw": "13253248089749857895",
+            "residual": "13.253248089749857895"
+          }
+        },
+        "first_seen": "2026-10-01T02:25:48Z",
+        "last_seen": "2026-10-01T02:35:55Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Time-ordered path from origin: 1 hop(s)",
+        "Rapid forwarding ratio 1.00 (median 135s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Degree percentile 0.92 within this graph",
+        "Splits to 3 recipients"
+      ],
+      "status": "candidate",
+      "support_evidence_ids": [
+        "EV-SHAPE-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+        "EV-TEMP-0x381dfe768400efece493b9a1a6f1c9def19a99f9"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+        "EV-GAP-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+        "EV-PATH-0x381dfe768400efece493b9a1a6f1c9def19a99f9"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0x7096be485b82a8d52fc01e6ff7dd07614e72ab600399b37ce0be78c0771e81d3:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x381dfe768400efece493b9a1a6f1c9def19a99f9"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0x7096be485b82a8d52fc01e6ff7dd07614e72ab600399b37ce0be78c0771e81d3:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x381dfe768400efece493b9a1a6f1c9def19a99f9"
+        ],
+        "hops": 1,
+        "cost": 3600.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0x7096be485b82a8d52fc01e6ff7dd07614e72ab600399b37ce0be78c0771e81d3:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-381dfe769a99f9",
+        "leading": "H1",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3347,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-SHAPE-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+              "EV-TEMP-0x381dfe768400efece493b9a1a6f1c9def19a99f9"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.875,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3224,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.7537,
+            "separation": 0.1847,
+            "evidence_mass": 0.2638
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-381dfe769a99f9",
+        "leading": "H1",
+        "single_evidence_removal_checks": [
+          {
+            "removed_evidence_id": "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2675,
+            "score_delta": -0.0672,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-SHAPE-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.3154,
+            "score_delta": -0.0193,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-TEMP-0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2531,
+            "score_delta": -0.0816,
+            "conclusion_changes": true
+          }
+        ],
+        "brittle": true,
+        "what_would_weaken_leading": [
+          "A source-backed service/exchange label for the origin or this address.",
+          "Evidence that the transfers are routine (regular schedule, long-standing counterparties).",
+          "Removal or downgrade of the strongest incident-association source (see checks)."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x381d\u202699f9; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-83d83c6042932c",
+      "rank": 3,
+      "node_id": "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+      "address": "0x83d83c6026306dfbe26a53232abe54093942932c",
+      "title": "Rapid forwarding relay",
+      "priority_score": 45.7,
+      "priority_tier": "medium_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.75,
+          "weight": 7.0,
+          "points": 5.25,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.9219,
+          "weight": 5.0,
+          "points": 4.61,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.75,
+          "weight": 7.0,
+          "points": 5.25,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.9219,
+          "weight": 5.0,
+          "points": 4.61,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.75,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.5,
+          "unusual_degree": 0.9219,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 2,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:25:18Z",
+        "in_transfers": 1,
+        "out_transfers": 4,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 4,
+        "degree_percentile": 0.9219,
+        "receipt_to_forward_deltas_s": [
+          34,
+          91,
+          314,
+          560
+        ],
+        "median_receipt_to_forward_s": 202.5,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.75,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "60209169198221025280",
+            "total_in_raw": "60209169198221025280",
+            "symbol": "ETH",
+            "traced_in": "60.20916919822102528",
+            "total_in": "60.20916919822102528",
+            "continuity": 1.0,
+            "share_of_initial": 0.1444,
+            "residual_raw": "605915258044968960",
+            "residual": "0.60591525804496896"
+          }
+        },
+        "first_seen": "2026-10-01T02:25:18Z",
+        "last_seen": "2026-10-01T02:34:38Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 202s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 2 hop(s)",
+        "Splits to 4 recipients",
+        "Degree percentile 0.92 within this graph"
+      ],
+      "status": "candidate",
+      "support_evidence_ids": [
+        "EV-SHAPE-0x83d83c6026306dfbe26a53232abe54093942932c",
+        "EV-TEMP-0x83d83c6026306dfbe26a53232abe54093942932c"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x83d83c6026306dfbe26a53232abe54093942932c",
+        "EV-GAP-0x83d83c6026306dfbe26a53232abe54093942932c",
+        "EV-PATH-0x83d83c6026306dfbe26a53232abe54093942932c"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c"
+        ],
+        "hops": 2,
+        "cost": 7431.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 231
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-83d83c6042932c",
+        "leading": "H1",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.344,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-SHAPE-0x83d83c6026306dfbe26a53232abe54093942932c",
+              "EV-TEMP-0x83d83c6026306dfbe26a53232abe54093942932c"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.9275,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.2956,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.792,
+            "separation": 0.194,
+            "evidence_mass": 0.2772
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-83d83c6042932c",
+        "leading": "H1",
+        "single_evidence_removal_checks": [
+          {
+            "removed_evidence_id": "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.344,
+            "score_after": 0.2781,
+            "score_delta": -0.0659,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-SHAPE-0x83d83c6026306dfbe26a53232abe54093942932c",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.344,
+            "score_after": 0.3154,
+            "score_delta": -0.0286,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-TEMP-0x83d83c6026306dfbe26a53232abe54093942932c",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.344,
+            "score_after": 0.2639,
+            "score_delta": -0.0801,
+            "conclusion_changes": true
+          }
+        ],
+        "brittle": true,
+        "what_would_weaken_leading": [
+          "A source-backed service/exchange label for the origin or this address.",
+          "Evidence that the transfers are routine (regular schedule, long-standing counterparties).",
+          "Removal or downgrade of the strongest incident-association source (see checks)."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x83d8\u2026932c; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-0cfcaabe154541",
+      "rank": 4,
+      "node_id": "1:0x0cfcaabe113492c6521e1184d54f3baa07154541",
+      "address": "0x0cfcaabe113492c6521e1184d54f3baa07154541",
+      "title": "Rapid forwarding relay",
+      "priority_score": 42.77,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.8438,
+          "weight": 5.0,
+          "points": 4.219,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.8438,
+          "weight": 5.0,
+          "points": 4.219,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.5,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.5,
+          "unusual_degree": 0.8438,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 2,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:23:53Z",
+        "in_transfers": 1,
+        "out_transfers": 3,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 3,
+        "degree_percentile": 0.8438,
+        "receipt_to_forward_deltas_s": [
+          30,
+          383,
+          555
+        ],
+        "median_receipt_to_forward_s": 383.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.5,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "43169791684809736192",
+            "total_in_raw": "43169791684809736192",
+            "symbol": "ETH",
+            "traced_in": "43.169791684809736192",
+            "total_in": "43.169791684809736192",
+            "continuity": 1.0,
+            "share_of_initial": 0.1035,
+            "residual_raw": "17340584765582344192",
+            "residual": "17.340584765582344192"
+          }
+        },
+        "first_seen": "2026-10-01T02:23:53Z",
+        "last_seen": "2026-10-01T02:33:08Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 383s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 2 hop(s)",
+        "Degree percentile 0.84 within this graph",
+        "Splits to 3 recipients"
+      ],
+      "status": "candidate",
+      "support_evidence_ids": [
+        "EV-SHAPE-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+        "EV-TEMP-0x0cfcaabe113492c6521e1184d54f3baa07154541"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+        "EV-GAP-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+        "EV-PATH-0x0cfcaabe113492c6521e1184d54f3baa07154541"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0xb55ea5d45e58efaabe275199d580ee3631d7f9fafa6206bd3423252983a3d990:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x0cfcaabe113492c6521e1184d54f3baa07154541"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0xb55ea5d45e58efaabe275199d580ee3631d7f9fafa6206bd3423252983a3d990:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x0cfcaabe113492c6521e1184d54f3baa07154541"
+        ],
+        "hops": 2,
+        "cost": 7346.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0xb55ea5d45e58efaabe275199d580ee3631d7f9fafa6206bd3423252983a3d990:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 146
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-0cfcaabe154541",
+        "leading": "H1",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3347,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-SHAPE-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+              "EV-TEMP-0x0cfcaabe113492c6521e1184d54f3baa07154541"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.875,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3224,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.7537,
+            "separation": 0.1847,
+            "evidence_mass": 0.2638
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-0cfcaabe154541",
+        "leading": "H1",
+        "single_evidence_removal_checks": [
+          {
+            "removed_evidence_id": "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2675,
+            "score_delta": -0.0672,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-SHAPE-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.3154,
+            "score_delta": -0.0193,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-TEMP-0x0cfcaabe113492c6521e1184d54f3baa07154541",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2531,
+            "score_delta": -0.0816,
+            "conclusion_changes": true
+          }
+        ],
+        "brittle": true,
+        "what_would_weaken_leading": [
+          "A source-backed service/exchange label for the origin or this address.",
+          "Evidence that the transfers are routine (regular schedule, long-standing counterparties).",
+          "Removal or downgrade of the strongest incident-association source (see checks)."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x0cfc\u20264541; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-df03905a53f115",
+      "rank": 5,
+      "node_id": "1:0xdf03905a4142f597d5eca9689a5777fbe353f115",
+      "address": "0xdf03905a4142f597d5eca9689a5777fbe353f115",
+      "title": "Rapid forwarding relay",
+      "priority_score": 42.77,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.8438,
+          "weight": 5.0,
+          "points": 4.219,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.8438,
+          "weight": 5.0,
+          "points": 4.219,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.5,
+          "weight": 7.0,
+          "points": 3.5,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.5,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.5,
+          "unusual_degree": 0.8438,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 2,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:29:33Z",
+        "in_transfers": 1,
+        "out_transfers": 3,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 3,
+        "degree_percentile": 0.8438,
+        "receipt_to_forward_deltas_s": [
+          131,
+          210,
+          429
+        ],
+        "median_receipt_to_forward_s": 210.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.5,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "164409365699747381248",
+            "total_in_raw": "164409365699747381248",
+            "symbol": "ETH",
+            "traced_in": "164.409365699747381248",
+            "total_in": "164.409365699747381248",
+            "continuity": 1.0,
+            "share_of_initial": 0.3942,
+            "residual_raw": "8112607184283779072",
+            "residual": "8.112607184283779072"
+          }
+        },
+        "first_seen": "2026-10-01T02:29:33Z",
+        "last_seen": "2026-10-01T02:36:42Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 210s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 2 hop(s)",
+        "Degree percentile 0.84 within this graph",
+        "Splits to 3 recipients"
+      ],
+      "status": "candidate",
+      "support_evidence_ids": [
+        "EV-SHAPE-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+        "EV-TEMP-0xdf03905a4142f597d5eca9689a5777fbe353f115"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+        "EV-GAP-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+        "EV-PATH-0xdf03905a4142f597d5eca9689a5777fbe353f115"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0x7096be485b82a8d52fc01e6ff7dd07614e72ab600399b37ce0be78c0771e81d3:tx",
+          "1:0x1b10bbe9b13772c6af0d2666aac295ad71a1eac3863b760f7f4ce6f47f53c6c9:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+          "1:0xdf03905a4142f597d5eca9689a5777fbe353f115"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xba34cb3424982c740f68aabe782c005e5dbea90a5547d3801bea1c54b6bfd388:tx",
+          "1:0x1b10bbe9b13772c6af0d2666aac295ad71a1eac3863b760f7f4ce6f47f53c6c9:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x381dfe768400efece493b9a1a6f1c9def19a99f9",
+          "1:0xdf03905a4142f597d5eca9689a5777fbe353f115"
+        ],
+        "hops": 2,
+        "cost": 7335.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xba34cb3424982c740f68aabe782c005e5dbea90a5547d3801bea1c54b6bfd388:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0x1b10bbe9b13772c6af0d2666aac295ad71a1eac3863b760f7f4ce6f47f53c6c9:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 135
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-df03905a53f115",
+        "leading": "H1",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3347,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-SHAPE-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+              "EV-TEMP-0xdf03905a4142f597d5eca9689a5777fbe353f115"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.875,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3224,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.7537,
+            "separation": 0.1847,
+            "evidence_mass": 0.2638
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-df03905a53f115",
+        "leading": "H1",
+        "single_evidence_removal_checks": [
+          {
+            "removed_evidence_id": "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2675,
+            "score_delta": -0.0672,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-SHAPE-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.3154,
+            "score_delta": -0.0193,
+            "conclusion_changes": true
+          },
+          {
+            "removed_evidence_id": "EV-TEMP-0xdf03905a4142f597d5eca9689a5777fbe353f115",
+            "leading_before": "H1",
+            "leading_after": "H3",
+            "score_before": 0.3347,
+            "score_after": 0.2531,
+            "score_delta": -0.0816,
+            "conclusion_changes": true
+          }
+        ],
+        "brittle": true,
+        "what_would_weaken_leading": [
+          "A source-backed service/exchange label for the origin or this address.",
+          "Evidence that the transfers are routine (regular schedule, long-standing counterparties).",
+          "Removal or downgrade of the strongest incident-association source (see checks)."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0xdf03\u2026f115; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-5509608dced28d",
+      "rank": 6,
+      "node_id": "1:0x5509608d6cbe834c3ad93c009887d9436dced28d",
+      "address": "0x5509608d6cbe834c3ad93c009887d9436dced28d",
+      "title": "Rapid forwarding relay",
+      "priority_score": 39.73,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.5,
+          "weight": 15.0,
+          "points": 7.5,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.25,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.5,
+          "unusual_degree": 0.75,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 2,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:27:27Z",
+        "in_transfers": 1,
+        "out_transfers": 2,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 2,
+        "degree_percentile": 0.75,
+        "receipt_to_forward_deltas_s": [
+          103,
+          200
+        ],
+        "median_receipt_to_forward_s": 151.5,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.25,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "57934610760122089472",
+            "total_in_raw": "57934610760122089472",
+            "symbol": "ETH",
+            "traced_in": "57.934610760122089472",
+            "total_in": "57.934610760122089472",
+            "continuity": 1.0,
+            "share_of_initial": 0.1389,
+            "residual_raw": "2486988788157952000",
+            "residual": "2.486988788157952"
+          }
+        },
+        "first_seen": "2026-10-01T02:27:27Z",
+        "last_seen": "2026-10-01T02:30:47Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 152s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 2 hop(s)",
+        "Degree percentile 0.75 within this graph",
+        "Splits to 2 recipients"
+      ],
+      "status": "unresolved",
+      "support_evidence_ids": [
+        "EV-TEMP-0x5509608d6cbe834c3ad93c009887d9436dced28d"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x5509608d6cbe834c3ad93c009887d9436dced28d",
+        "EV-GAP-0x5509608d6cbe834c3ad93c009887d9436dced28d",
+        "EV-PATH-0x5509608d6cbe834c3ad93c009887d9436dced28d",
+        "EV-SHAPE-0x5509608d6cbe834c3ad93c009887d9436dced28d"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x5509608d6cbe834c3ad93c009887d9436dced28d"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x5509608d6cbe834c3ad93c009887d9436dced28d"
+        ],
+        "hops": 2,
+        "cost": 7560.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 360
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-5509608dced28d",
+        "leading": "H3",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3154,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-TEMP-0x5509608d6cbe834c3ad93c009887d9436dced28d"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.77,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3775,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.675,
+            "separation": 0.1654,
+            "evidence_mass": 0.2362
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-5509608dced28d",
+        "leading": "H3",
+        "single_evidence_removal_checks": [],
+        "brittle": false,
+        "what_would_weaken_leading": [
+          "Any additional independent public source about the origin or this address.",
+          "Further observed transfers that extend or terminate the traced paths."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H1",
+            "score": 0.3154,
+            "has_support": true
+          },
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x5509\u2026d28d; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-705c77102f8d5e",
+      "rank": 7,
+      "node_id": "1:0x705c771069e8e6e64e6f224b326f4edfd92f8d5e",
+      "address": "0x705c771069e8e6e64e6f224b326f4edfd92f8d5e",
+      "title": "Rapid forwarding relay",
+      "priority_score": 36.3,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.25,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.3333,
+          "unusual_degree": 0.75,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 3,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:26:49Z",
+        "in_transfers": 1,
+        "out_transfers": 2,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 2,
+        "degree_percentile": 0.75,
+        "receipt_to_forward_deltas_s": [
+          225,
+          395
+        ],
+        "median_receipt_to_forward_s": 310.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.25,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "25386286070697574400",
+            "total_in_raw": "25386286070697574400",
+            "symbol": "ETH",
+            "traced_in": "25.3862860706975744",
+            "total_in": "25.3862860706975744",
+            "continuity": 1.0,
+            "share_of_initial": 0.0609,
+            "residual_raw": "418315029543229440",
+            "residual": "0.41831502954322944"
+          }
+        },
+        "first_seen": "2026-10-01T02:26:49Z",
+        "last_seen": "2026-10-01T02:33:24Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 310s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 3 hop(s)",
+        "Degree percentile 0.75 within this graph",
+        "Splits to 2 recipients"
+      ],
+      "status": "unresolved",
+      "support_evidence_ids": [
+        "EV-TEMP-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e",
+        "EV-GAP-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e",
+        "EV-PATH-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e",
+        "EV-SHAPE-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x44146b3e2288036b7371e49f7bd6d9f24f722cdea87b57bb9d38b833ee0c8e92:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0x705c771069e8e6e64e6f224b326f4edfd92f8d5e"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x44146b3e2288036b7371e49f7bd6d9f24f722cdea87b57bb9d38b833ee0c8e92:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0x705c771069e8e6e64e6f224b326f4edfd92f8d5e"
+        ],
+        "hops": 3,
+        "cost": 11122.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 231
+          },
+          {
+            "event_id": "1:0x44146b3e2288036b7371e49f7bd6d9f24f722cdea87b57bb9d38b833ee0c8e92:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 91
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-705c77102f8d5e",
+        "leading": "H3",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3154,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-TEMP-0x705c771069e8e6e64e6f224b326f4edfd92f8d5e"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.77,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3775,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.675,
+            "separation": 0.1654,
+            "evidence_mass": 0.2362
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-705c77102f8d5e",
+        "leading": "H3",
+        "single_evidence_removal_checks": [],
+        "brittle": false,
+        "what_would_weaken_leading": [
+          "Any additional independent public source about the origin or this address.",
+          "Further observed transfers that extend or terminate the traced paths."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H1",
+            "score": 0.3154,
+            "has_support": true
+          },
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x705c\u20268d5e; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-78185fa7ee4dc8",
+      "rank": 8,
+      "node_id": "1:0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8",
+      "address": "0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8",
+      "title": "Rapid forwarding relay",
+      "priority_score": 36.3,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.75,
+          "weight": 5.0,
+          "points": 3.75,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.25,
+          "weight": 7.0,
+          "points": 1.75,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.25,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.3333,
+          "unusual_degree": 0.75,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 3,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:30:47Z",
+        "in_transfers": 1,
+        "out_transfers": 2,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 2,
+        "degree_percentile": 0.75,
+        "receipt_to_forward_deltas_s": [
+          65,
+          416
+        ],
+        "median_receipt_to_forward_s": 240.5,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.25,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "24642527409190027264",
+            "total_in_raw": "24642527409190027264",
+            "symbol": "ETH",
+            "traced_in": "24.642527409190027264",
+            "total_in": "24.642527409190027264",
+            "continuity": 1.0,
+            "share_of_initial": 0.0591,
+            "residual_raw": "900512203915643904",
+            "residual": "0.900512203915643904"
+          }
+        },
+        "first_seen": "2026-10-01T02:30:47Z",
+        "last_seen": "2026-10-01T02:37:43Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 240s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 3 hop(s)",
+        "Degree percentile 0.75 within this graph",
+        "Splits to 2 recipients"
+      ],
+      "status": "unresolved",
+      "support_evidence_ids": [
+        "EV-TEMP-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8",
+        "EV-GAP-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8",
+        "EV-PATH-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8",
+        "EV-SHAPE-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx",
+          "1:0x61c2d00e57ca087ef2e2f202f794e0368562f9e95d56633bc6f60d76919d4cde:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x5509608d6cbe834c3ad93c009887d9436dced28d",
+          "1:0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx",
+          "1:0x61c2d00e57ca087ef2e2f202f794e0368562f9e95d56633bc6f60d76919d4cde:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x5509608d6cbe834c3ad93c009887d9436dced28d",
+          "1:0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8"
+        ],
+        "hops": 3,
+        "cost": 11360.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 360
+          },
+          {
+            "event_id": "1:0x61c2d00e57ca087ef2e2f202f794e0368562f9e95d56633bc6f60d76919d4cde:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 200
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-78185fa7ee4dc8",
+        "leading": "H3",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3154,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-TEMP-0x78185fa78e05e1c3767f4cdcc449cd17c5ee4dc8"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.77,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3775,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.675,
+            "separation": 0.1654,
+            "evidence_mass": 0.2362
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-78185fa7ee4dc8",
+        "leading": "H3",
+        "single_evidence_removal_checks": [],
+        "brittle": false,
+        "what_would_weaken_leading": [
+          "Any additional independent public source about the origin or this address.",
+          "Further observed transfers that extend or terminate the traced paths."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H1",
+            "score": 0.3154,
+            "has_support": true
+          },
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x7818\u20264dc8; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-2daddaa76932f0",
+      "rank": 9,
+      "node_id": "1:0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0",
+      "address": "0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0",
+      "title": "Rapid forwarding relay",
+      "priority_score": 33.05,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.625,
+          "weight": 5.0,
+          "points": 3.125,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.625,
+          "weight": 5.0,
+          "points": 3.125,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.0,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.3333,
+          "unusual_degree": 0.625,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 3,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:30:32Z",
+        "in_transfers": 1,
+        "out_transfers": 1,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 1,
+        "degree_percentile": 0.625,
+        "receipt_to_forward_deltas_s": [
+          261
+        ],
+        "median_receipt_to_forward_s": 261.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.0,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "9883138129355284480",
+            "total_in_raw": "9883138129355284480",
+            "symbol": "ETH",
+            "traced_in": "9.88313812935528448",
+            "total_in": "9.88313812935528448",
+            "continuity": 1.0,
+            "share_of_initial": 0.0237,
+            "residual_raw": "4953690929247911936",
+            "residual": "4.953690929247911936"
+          }
+        },
+        "first_seen": "2026-10-01T02:30:32Z",
+        "last_seen": "2026-10-01T02:34:53Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 261s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 3 hop(s)",
+        "Degree percentile 0.62 within this graph"
+      ],
+      "status": "unresolved",
+      "support_evidence_ids": [
+        "EV-TEMP-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0",
+        "EV-GAP-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0",
+        "EV-PATH-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0",
+        "EV-SHAPE-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x114b3edb89b3690e491093ef26b2a88c6ef8016e6220126849948f45248124aa:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x114b3edb89b3690e491093ef26b2a88c6ef8016e6220126849948f45248124aa:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0"
+        ],
+        "hops": 3,
+        "cost": 11345.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 231
+          },
+          {
+            "event_id": "1:0x114b3edb89b3690e491093ef26b2a88c6ef8016e6220126849948f45248124aa:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 314
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-2daddaa76932f0",
+        "leading": "H3",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3154,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-TEMP-0x2daddaa71e435cf8fe1cbbfa24f6e167536932f0"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.77,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3775,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.675,
+            "separation": 0.1654,
+            "evidence_mass": 0.2362
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-2daddaa76932f0",
+        "leading": "H3",
+        "single_evidence_removal_checks": [],
+        "brittle": false,
+        "what_would_weaken_leading": [
+          "Any additional independent public source about the origin or this address.",
+          "Further observed transfers that extend or terminate the traced paths."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H1",
+            "score": 0.3154,
+            "has_support": true
+          },
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0x2dad\u202632f0; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    },
+    {
+      "lead_id": "LD-b5e036d09be16e",
+      "rank": 10,
+      "node_id": "1:0xb5e036d05777e3823f6ad9c009ca091b5d9be16e",
+      "address": "0xb5e036d05777e3823f6ad9c009ca091b5d9be16e",
+      "title": "Rapid forwarding relay",
+      "priority_score": 33.05,
+      "priority_tier": "low_priority",
+      "score_type": "transparent_priority_score_not_probability",
+      "components": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "temporal.fragmentation",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "temporal.consolidation",
+          "value": 0.0,
+          "weight": 5.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.625,
+          "weight": 5.0,
+          "points": 3.125,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "osint.source_quality",
+          "value": 0.0,
+          "weight": 8.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.independent_corrob",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.indicator_match",
+          "value": 0.0,
+          "weight": 7.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "osint.source_freshness",
+          "value": 0.0,
+          "weight": 3.0,
+          "points": 0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.contradiction_strength",
+          "value": 0.0,
+          "weight": -12.0,
+          "points": -0.0,
+          "direction": "neutral"
+        },
+        {
+          "signal": "evidence.missing_link_strength",
+          "value": 0.0,
+          "weight": -7.0,
+          "points": -0.0,
+          "direction": "neutral"
+        }
+      ],
+      "top_contributors": [
+        {
+          "signal": "temporal.rapid_forwarding",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.flow_continuity",
+          "value": 1.0,
+          "weight": 8.0,
+          "points": 8.0,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.incident_path_proximity",
+          "value": 0.3333,
+          "weight": 15.0,
+          "points": 4.999,
+          "direction": "supports_priority"
+        },
+        {
+          "signal": "graph.unusual_degree",
+          "value": 0.625,
+          "weight": 5.0,
+          "points": 3.125,
+          "direction": "supports_priority"
+        }
+      ],
+      "missing_signals": [
+        "osint.source_quality",
+        "osint.independent_corrob",
+        "osint.indicator_match",
+        "osint.source_freshness",
+        "evidence.contradiction_strength"
+      ],
+      "not_applicable_signals": [
+        "model_illicit_score"
+      ],
+      "signal_completeness": 0.583,
+      "weights_used": {
+        "temporal.rapid_forwarding": 8.0,
+        "temporal.fragmentation": 7.0,
+        "temporal.consolidation": 5.0,
+        "graph.incident_path_proximity": 15.0,
+        "graph.unusual_degree": 5.0,
+        "graph.flow_continuity": 8.0,
+        "osint.source_quality": 8.0,
+        "osint.independent_corrob": 7.0,
+        "osint.indicator_match": 7.0,
+        "osint.source_freshness": 3.0,
+        "evidence.contradiction_strength": -12.0,
+        "evidence.missing_link_strength": -7.0
+      },
+      "signals": {
+        "temporal": {
+          "rapid_forwarding": 1.0,
+          "fragmentation": 0.0,
+          "consolidation": 0.0
+        },
+        "graph": {
+          "incident_path_proximity": 0.3333,
+          "unusual_degree": 0.625,
+          "flow_continuity": 1.0
+        },
+        "osint": {},
+        "evidence": {
+          "missing_link_strength": 0.0
+        }
+      },
+      "signal_overrides": [],
+      "features": {
+        "hops": 3,
+        "time_respecting_reachable": true,
+        "static_hops_if_not_time_respecting": null,
+        "earliest_arrival": "2026-10-01T02:34:38Z",
+        "in_transfers": 1,
+        "out_transfers": 1,
+        "distinct_in_sources": 1,
+        "distinct_out_targets": 1,
+        "degree_percentile": 0.625,
+        "receipt_to_forward_deltas_s": [
+          127
+        ],
+        "median_receipt_to_forward_s": 127.0,
+        "rapid_forwarding_ratio": 1.0,
+        "fragmentation": 0.0,
+        "consolidation": 0.0,
+        "flow_continuity": 1.0,
+        "traced_by_asset": {
+          "1:native": {
+            "traced_in_raw": "24328829740123197440",
+            "total_in_raw": "24328829740123197440",
+            "symbol": "ETH",
+            "traced_in": "24.32882974012319744",
+            "total_in": "24.32882974012319744",
+            "continuity": 1.0,
+            "share_of_initial": 0.0583,
+            "residual_raw": "10295542431137226752",
+            "residual": "10.295542431137226752"
+          }
+        },
+        "first_seen": "2026-10-01T02:34:38Z",
+        "last_seen": "2026-10-01T02:36:45Z",
+        "in_incident_component": true
+      },
+      "reasons": [
+        "Rapid forwarding ratio 1.00 (median 127s receipt\u2192forward)",
+        "100% of observed inflow is traced value (FIFO allocation)",
+        "Time-ordered path from origin: 3 hop(s)",
+        "Degree percentile 0.62 within this graph"
+      ],
+      "status": "unresolved",
+      "support_evidence_ids": [
+        "EV-TEMP-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e"
+      ],
+      "contradiction_evidence_ids": [],
+      "context_evidence_ids": [
+        "EV-FLOW-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e",
+        "EV-GAP-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e",
+        "EV-PATH-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e",
+        "EV-SHAPE-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e"
+      ],
+      "osint": {
+        "supporting_finding_ids": [],
+        "contradicting_finding_ids": [],
+        "context_finding_ids": [],
+        "independent_groups": []
+      },
+      "path": {
+        "event_ids": [
+          "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x01b8997bb8a43d3effeb4a2de862a13a29e6a3cfed23b5e6a7070142362babc0:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0xb5e036d05777e3823f6ad9c009ca091b5d9be16e"
+        ]
+      },
+      "fastest_route": {
+        "event_ids": [
+          "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+          "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+          "1:0x01b8997bb8a43d3effeb4a2de862a13a29e6a3cfed23b5e6a7070142362babc0:tx"
+        ],
+        "node_ids": [
+          "1:0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "1:0x51ccb63be696a09a93274386814191e9a628c294",
+          "1:0x83d83c6026306dfbe26a53232abe54093942932c",
+          "1:0xb5e036d05777e3823f6ad9c009ca091b5d9be16e"
+        ],
+        "hops": 3,
+        "cost": 11591.0,
+        "cost_breakdown": [
+          {
+            "event_id": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 0
+          },
+          {
+            "event_id": "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 231
+          },
+          {
+            "event_id": "1:0x01b8997bb8a43d3effeb4a2de862a13a29e6a3cfed23b5e6a7070142362babc0:tx",
+            "hop_penalty_s": 3600.0,
+            "dwell_s": 560
+          }
+        ],
+        "cost_model": "sum(hop_penalty=3600s + dwell seconds); amounts are not distances"
+      },
+      "hypotheses": {
+        "lead_id": "LD-b5e036d09be16e",
+        "leading": "H3",
+        "score_type": "heuristic_review_score_not_probability",
+        "hypotheses": [
+          {
+            "id": "H1",
+            "title": "Potential incident-related movement",
+            "score": 0.3154,
+            "supporting_evidence_ids": [
+              "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+              "EV-TEMP-0xb5e036d05777e3823f6ad9c009ca091b5d9be16e"
+            ],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0.77,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H2",
+            "title": "Benign service / exchange / operational behaviour",
+            "score": 0.15,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "support_weight": 0,
+            "contradiction_weight": 0,
+            "context_weight": 0.0
+          },
+          {
+            "id": "H3",
+            "title": "Insufficient evidence to distinguish H1 and H2",
+            "score": 0.3775,
+            "supporting_evidence_ids": [],
+            "contradicting_evidence_ids": [],
+            "decisiveness": 0.675,
+            "separation": 0.1654,
+            "evidence_mass": 0.2362
+          }
+        ],
+        "assumptions": [
+          "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+          "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+          "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+        ],
+        "missing_information": [
+          "No public-source evidence about the origin or this address.",
+          "No source-backed service/exchange label (would support H2).",
+          "No source-backed incident association (would support H1)."
+        ],
+        "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+      },
+      "falsification": {
+        "lead_id": "LD-b5e036d09be16e",
+        "leading": "H3",
+        "single_evidence_removal_checks": [],
+        "brittle": false,
+        "what_would_weaken_leading": [
+          "Any additional independent public source about the origin or this address.",
+          "Further observed transfers that extend or terminate the traced paths."
+        ],
+        "alternative_fit": [
+          {
+            "id": "H1",
+            "score": 0.3154,
+            "has_support": true
+          },
+          {
+            "id": "H2",
+            "score": 0.15,
+            "has_support": false
+          }
+        ],
+        "note": "A diagnostic for dependence on individual evidence items, not a test of truth."
+      },
+      "next_check": "Search permitted public sources for 0xb5e0\u2026e16e; no public-source evidence has been found yet.",
+      "interpretation": "Prioritization aid only. Verify source records and competing explanations; this score does not prove illicit activity or identity."
+    }
+  ],
+  "case_hypotheses": {
+    "lead_id": "LD-51ccb63b28c294",
+    "leading": "H1",
+    "score_type": "heuristic_review_score_not_probability",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "title": "Potential incident-related movement",
+        "score": 0.3533,
+        "supporting_evidence_ids": [
+          "EV-ORIGIN-0x807002b5e903e6b5d51d4d0a991285573a7cfd1b",
+          "EV-SHAPE-0x51ccb63be696a09a93274386814191e9a628c294",
+          "EV-TEMP-0x51ccb63be696a09a93274386814191e9a628c294"
+        ],
+        "contradicting_evidence_ids": [],
+        "support_weight": 0.98,
+        "contradiction_weight": 0,
+        "context_weight": 0.0
+      },
+      {
+        "id": "H2",
+        "title": "Benign service / exchange / operational behaviour",
+        "score": 0.15,
+        "supporting_evidence_ids": [],
+        "contradicting_evidence_ids": [],
+        "support_weight": 0,
+        "contradiction_weight": 0,
+        "context_weight": 0.0
+      },
+      {
+        "id": "H3",
+        "title": "Insufficient evidence to distinguish H1 and H2",
+        "score": 0.2693,
+        "supporting_evidence_ids": [],
+        "contradicting_evidence_ids": [],
+        "decisiveness": 0.8296,
+        "separation": 0.2033,
+        "evidence_mass": 0.2904
+      }
+    ],
+    "assumptions": [
+      "H1/H2 scores use Person 2's transparent heuristic (support/contradiction balance x saturating evidence mass).",
+      "H3 = 0.15 + 0.70 x (1 - decisiveness); decisiveness = min(1,|H1-H2|/0.15) x min(1, mass/0.35). Ties resolve to H3.",
+      "On-chain paths and flow allocations are context for both H1 and H2 (both hypotheses predict them)."
+    ],
+    "missing_information": [
+      "No public-source evidence about the origin or this address.",
+      "No source-backed service/exchange label (would support H2).",
+      "No source-backed incident association (would support H1)."
+    ],
+    "interpretation": "Comparative review scores, not probabilities. H3 is a legitimate outcome."
+  },
+  "timeline": [
+    {
+      "time": "2026-10-01T02:19:47Z",
+      "event_time": "2026-10-01T02:19:47Z",
+      "kind": "transfer",
+      "ref": "1:0x82b18f667b2e067a75d8d084b2e283f6e347d8c4c195868b91fd616954dd3714:tx",
+      "title": "Transfer 0x29f3\u2026eab1 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:19:57Z",
+      "event_time": "2026-10-01T02:19:57Z",
+      "kind": "transfer",
+      "ref": "1:0xdc422efb8626d790b1c8c14d1911eafd69bfe75a23b79c55ec99db92863242cd:tx",
+      "title": "Transfer 0x8070\u2026fd1b \u2192 0x51cc\u2026c294",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:20:27Z",
+      "event_time": "2026-10-01T02:20:27Z",
+      "kind": "transfer",
+      "ref": "1:0x8e0372fe75e2d2185b8906716983a8fa75106ddd049eb66efc18bbe97e30b4dd:log-74",
+      "title": "Transfer 0x51cc\u2026c294 \u2192 0xb005\u20263462",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:20:52Z",
+      "event_time": "2026-10-01T02:20:52Z",
+      "kind": "transfer",
+      "ref": "1:0x7191e6c9eaf31a289e0eebd879442c6ce11c0907c2185fb45e4f912dd11fe93c:tx",
+      "title": "Transfer 0x51cc\u2026c294 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:21:27Z",
+      "event_time": "2026-10-01T02:21:27Z",
+      "kind": "transfer",
+      "ref": "1:0xd37ad20e0aba6a44e7f40ed94156d8601ce6f154789690c2c770c57cf8e48f10:tx",
+      "title": "Transfer 0x8070\u2026fd1b \u2192 0x51cc\u2026c294",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:23:53Z",
+      "event_time": "2026-10-01T02:23:53Z",
+      "kind": "transfer",
+      "ref": "1:0xb55ea5d45e58efaabe275199d580ee3631d7f9fafa6206bd3423252983a3d990:tx",
+      "title": "Transfer 0x51cc\u2026c294 \u2192 0x0cfc\u20264541",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:24:23Z",
+      "event_time": "2026-10-01T02:24:23Z",
+      "kind": "transfer",
+      "ref": "1:0xcf6a971f126f806939586a8c00d1b40f5c5df01820f63c088794798ad3fbab25:tx",
+      "title": "Transfer 0x0cfc\u20264541 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:25:18Z",
+      "event_time": "2026-10-01T02:25:18Z",
+      "kind": "transfer",
+      "ref": "1:0xd53e5a64def95c061b2a1503f6729fffa9a17b370b48d1529cb9bfed8f90075a:tx",
+      "title": "Transfer 0x51cc\u2026c294 \u2192 0x83d8\u2026932c",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:25:48Z",
+      "event_time": "2026-10-01T02:25:48Z",
+      "kind": "transfer",
+      "ref": "1:0x7096be485b82a8d52fc01e6ff7dd07614e72ab600399b37ce0be78c0771e81d3:tx",
+      "title": "Transfer 0x8070\u2026fd1b \u2192 0x381d\u202699f9",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:25:52Z",
+      "event_time": "2026-10-01T02:25:52Z",
+      "kind": "transfer",
+      "ref": "1:0xcde959e941f9b49e23212944ed37998ce54ecaf2e8ddaab9ca7a3ec2c913bfbd:tx",
+      "title": "Transfer 0x83d8\u2026932c \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:26:19Z",
+      "event_time": "2026-10-01T02:26:19Z",
+      "kind": "transfer",
+      "ref": "1:0xb9a54056ae5d06e7999528229a64e1e4da3ab59123bc717adfae962834f6271c:tx",
+      "title": "Transfer 0x381d\u202699f9 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:26:49Z",
+      "event_time": "2026-10-01T02:26:49Z",
+      "kind": "transfer",
+      "ref": "1:0x44146b3e2288036b7371e49f7bd6d9f24f722cdea87b57bb9d38b833ee0c8e92:tx",
+      "title": "Transfer 0x83d8\u2026932c \u2192 0x705c\u20268d5e",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:27:18Z",
+      "event_time": "2026-10-01T02:27:18Z",
+      "kind": "transfer",
+      "ref": "1:0xba34cb3424982c740f68aabe782c005e5dbea90a5547d3801bea1c54b6bfd388:tx",
+      "title": "Transfer 0x8070\u2026fd1b \u2192 0x381d\u202699f9",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:27:19Z",
+      "event_time": "2026-10-01T02:27:19Z",
+      "kind": "transfer",
+      "ref": "1:0xc16fa8ef9d499f3e3eac7af58145466bfa9e0db1813b319d3adfd578203a8dc2:tx",
+      "title": "Transfer 0xd94b\u20265226 \u2192 0x0e48\u2026aedb",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:27:27Z",
+      "event_time": "2026-10-01T02:27:27Z",
+      "kind": "transfer",
+      "ref": "1:0x76f446a9a862daed12b6ad80a62df1fe8eecec94662d3b13bbd61a479f34eeb2:tx",
+      "title": "Transfer 0x51cc\u2026c294 \u2192 0x5509\u2026d28d",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:29:10Z",
+      "event_time": "2026-10-01T02:29:10Z",
+      "kind": "transfer",
+      "ref": "1:0xdf283905b75cb70906a121614f9ed4f302ce86afce07a721e1ba082939e2fd80:tx",
+      "title": "Transfer 0x5509\u2026d28d \u2192 0xfc53\u2026b7a0",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:29:33Z",
+      "event_time": "2026-10-01T02:29:33Z",
+      "kind": "transfer",
+      "ref": "1:0x1b10bbe9b13772c6af0d2666aac295ad71a1eac3863b760f7f4ce6f47f53c6c9:tx",
+      "title": "Transfer 0x381d\u202699f9 \u2192 0xdf03\u2026f115",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:30:16Z",
+      "event_time": "2026-10-01T02:30:16Z",
+      "kind": "transfer",
+      "ref": "1:0x124f069ec1d2083d2f425942201a4c3c69854b3aae3a7475228fa1ed056d74d4:tx",
+      "title": "Transfer 0x0cfc\u20264541 \u2192 0xfa72\u2026f546",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:30:32Z",
+      "event_time": "2026-10-01T02:30:32Z",
+      "kind": "transfer",
+      "ref": "1:0x114b3edb89b3690e491093ef26b2a88c6ef8016e6220126849948f45248124aa:tx",
+      "title": "Transfer 0x83d8\u2026932c \u2192 0x2dad\u202632f0",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:30:34Z",
+      "event_time": "2026-10-01T02:30:34Z",
+      "kind": "transfer",
+      "ref": "1:0x4798a6d4789e839612bf6d009aeda222a06e14498458653f9184cd6a717382f9:tx",
+      "title": "Transfer 0x705c\u20268d5e \u2192 0x2dcd\u2026fc31",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:30:47Z",
+      "event_time": "2026-10-01T02:30:47Z",
+      "kind": "transfer",
+      "ref": "1:0x61c2d00e57ca087ef2e2f202f794e0368562f9e95d56633bc6f60d76919d4cde:tx",
+      "title": "Transfer 0x5509\u2026d28d \u2192 0x7818\u20264dc8",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:31:44Z",
+      "event_time": "2026-10-01T02:31:44Z",
+      "kind": "transfer",
+      "ref": "1:0xfa6010a74a0ea197e3ddac8d955fe1451859511c933d91c1fda81991e8c72518:tx",
+      "title": "Transfer 0xdf03\u2026f115 \u2192 0x1db3\u2026250f",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:31:52Z",
+      "event_time": "2026-10-01T02:31:52Z",
+      "kind": "transfer",
+      "ref": "1:0xf976279f9161c97629ccd3238d38820d009536a809924cb62a32036c5f489bc9:tx",
+      "title": "Transfer 0x7818\u20264dc8 \u2192 0xbba9\u20267dcf",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:32:10Z",
+      "event_time": "2026-10-01T02:32:10Z",
+      "kind": "transfer",
+      "ref": "1:0x9e12f9a147f962f8b7f7e091af8a35ffc3e4fd38fd5dbb078f21bcd569f6133f:tx",
+      "title": "Transfer 0xfc53\u2026b7a0 \u2192 0x482e\u2026ee0b",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:33:03Z",
+      "event_time": "2026-10-01T02:33:03Z",
+      "kind": "transfer",
+      "ref": "1:0x0ed940f6249ddd1653438ba554afbe1611f3fbb5f2ccb35ca1f0f0f3a6c9cedd:tx",
+      "title": "Transfer 0xdf03\u2026f115 \u2192 0xd0a4\u2026f715",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:33:08Z",
+      "event_time": "2026-10-01T02:33:08Z",
+      "kind": "transfer",
+      "ref": "1:0xbdafd38e4342a9dbb3044383b27a60ff9031064bb9223f6dd9fd1ccf58384a66:tx",
+      "title": "Transfer 0x0cfc\u20264541 \u2192 0x4ba6\u2026a8f5",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:33:24Z",
+      "event_time": "2026-10-01T02:33:24Z",
+      "kind": "transfer",
+      "ref": "1:0x57dfd5432f6a15fff36bf85c16efae9e301db420ca83332cd190c80dd9442c0e:tx",
+      "title": "Transfer 0x705c\u20268d5e \u2192 0x03d9\u20267cbe",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:33:58Z",
+      "event_time": "2026-10-01T02:33:58Z",
+      "kind": "transfer",
+      "ref": "1:0x1b48796361c2b5c4a0351c625aba5a22e7a471727febd9c72ad068533fe07657:tx",
+      "title": "Transfer 0xd0a4\u2026f715 \u2192 0xffe1\u2026e700",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:34:38Z",
+      "event_time": "2026-10-01T02:34:38Z",
+      "kind": "transfer",
+      "ref": "1:0x01b8997bb8a43d3effeb4a2de862a13a29e6a3cfed23b5e6a7070142362babc0:tx",
+      "title": "Transfer 0x83d8\u2026932c \u2192 0xb5e0\u2026e16e",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:34:53Z",
+      "event_time": "2026-10-01T02:34:53Z",
+      "kind": "transfer",
+      "ref": "1:0xae21d8702459a4018cd88dd7621ef12a963967b34484f7522be129462a2fa595:tx",
+      "title": "Transfer 0x2dad\u202632f0 \u2192 0xbdfd\u2026d265",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:35:55Z",
+      "event_time": "2026-10-01T02:35:55Z",
+      "kind": "transfer",
+      "ref": "1:0xa0c70d494f6637cdc8ce400c824a108aee66584c3198863330f7f7c23ea88cd1:tx",
+      "title": "Transfer 0x381d\u202699f9 \u2192 0x9cb8\u2026214a",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:36:05Z",
+      "event_time": "2026-10-01T02:36:05Z",
+      "kind": "transfer",
+      "ref": "1:0x5fb728634c870a127fa30b7049fd3ffb025ae55b18e49097e5de38fe632271b1:tx",
+      "title": "Transfer 0xfa72\u2026f546 \u2192 0x34ba\u2026409b",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:36:27Z",
+      "event_time": "2026-10-01T02:36:27Z",
+      "kind": "transfer",
+      "ref": "1:0xc1c1075a4a11f72c11c4d40c3a8a23357cc12e80f67ffbdf3094212458c2e5ea:tx",
+      "title": "Transfer 0xf7da\u2026c72a \u2192 0x51c9\u20266817",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:36:42Z",
+      "event_time": "2026-10-01T02:36:42Z",
+      "kind": "transfer",
+      "ref": "1:0xe5530a3dd26d653765155d22ae210ef8f4a8a6f3b3fd99989b1bc14d8b2a28c1:tx",
+      "title": "Transfer 0xdf03\u2026f115 \u2192 0x1c49\u20267966",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:36:45Z",
+      "event_time": "2026-10-01T02:36:45Z",
+      "kind": "transfer",
+      "ref": "1:0xc3c15140d65018a2e696facc045cc6691c341c2a9368299a93b2696e54f6fad4:tx",
+      "title": "Transfer 0xb5e0\u2026e16e \u2192 0xad7c\u202683e8",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:37:43Z",
+      "event_time": "2026-10-01T02:37:43Z",
+      "kind": "transfer",
+      "ref": "1:0xa3286ae1ee7d5e5fd40c637b37de83968627453fe2adc9c293d11abba1f77bea:tx",
+      "title": "Transfer 0x7818\u20264dc8 \u2192 0xe32d\u2026016b",
+      "known_at_cutoff": true,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:37:45Z",
+      "event_time": "2026-10-01T02:37:45Z",
+      "kind": "transfer",
+      "ref": "1:0xdd47196c155d88fdd8ee25b26004040f70a6b25301d84f79aa3c8cfaf634764e:tx",
+      "title": "Transfer 0x2dad\u202632f0 \u2192 0xf804\u2026ebad",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:38:38Z",
+      "event_time": "2026-10-01T02:38:38Z",
+      "kind": "transfer",
+      "ref": "1:0xb80f98768e4dd2fb3c2eb931098f0fcd2dcbf23eaaf72c39367000f68b4d8546:tx",
+      "title": "Transfer 0x1db3\u2026250f \u2192 0x9a28\u2026a71f",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:38:38Z",
+      "event_time": "2026-10-01T02:38:38Z",
+      "kind": "transfer",
+      "ref": "1:0xb8d9dea8b16ac41064ac844be79eed14d75ac64c13ac7607d62e758753053959:tx",
+      "title": "Transfer 0xfc53\u2026b7a0 \u2192 0x2157\u2026801f",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:38:43Z",
+      "event_time": "2026-10-01T02:38:43Z",
+      "kind": "transfer",
+      "ref": "1:0x24e3043b7e2bd6a4bc3a340f70103ec220b97bf0951da08ef50568d960c4586a:tx",
+      "title": "Transfer 0x4ba6\u2026a8f5 \u2192 0x72f2\u2026a749",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:39:23Z",
+      "event_time": "2026-10-01T02:39:23Z",
+      "kind": "transfer",
+      "ref": "1:0xe7fd065f6817fc6d473a49f266b9519cf498cae736d2e12b2e1f09789d2fcbe3:tx",
+      "title": "Transfer 0xb5e0\u2026e16e \u2192 0xd74b\u20264754",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:39:40Z",
+      "event_time": "2026-10-01T02:39:40Z",
+      "kind": "transfer",
+      "ref": "1:0xe1a927513130d5b3309a5a8644772a37ee91c73ce3a69ac0d2d634ea0271513f:tx",
+      "title": "Transfer 0x0cfc\u20264541 \u2192 0xe10a\u20264ddf",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:39:59Z",
+      "event_time": "2026-10-01T02:39:59Z",
+      "kind": "transfer",
+      "ref": "1:0x04b3e6c5c87418ae5d621c6a3e8a5fbe955af29f461ec73aa1bd6ef94f98d739:tx",
+      "title": "Transfer 0x1c49\u20267966 \u2192 0xc921\u2026cac9",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:40:16Z",
+      "event_time": "2026-10-01T02:40:16Z",
+      "kind": "transfer",
+      "ref": "1:0x203b19038be59a8b9b5549be5227c1083fbdbecf4d1170cc18a073b2d3171ac8:tx",
+      "title": "Transfer 0x9cb8\u2026214a \u2192 0xb2ce\u2026c2f5",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:40:40Z",
+      "event_time": "2026-10-01T02:40:40Z",
+      "kind": "transfer",
+      "ref": "1:0x4d8becd3ac58f2aabee463df1970de66da7022670dd5a8b0f6a6f9fdd2db1c45:tx",
+      "title": "Transfer 0x10ee\u2026b9e6 \u2192 0xb7cf\u2026fa95",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:40:49Z",
+      "event_time": "2026-10-01T02:40:49Z",
+      "kind": "transfer",
+      "ref": "1:0x44f9d544f8540c3abf29d3c6701789f37262f1c009f03af300e569a369e7b705:tx",
+      "title": "Transfer 0xd0a4\u2026f715 \u2192 0x9a93\u2026429b",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:41:40Z",
+      "event_time": "2026-10-01T02:41:40Z",
+      "kind": "transfer",
+      "ref": "1:0x17d6f5948bfbae26bfc3eed912bf4095efd3f5f0f96700fbfd0b262ba7da1be3:tx",
+      "title": "Transfer 0xe10a\u20264ddf \u2192 0xfa72\u2026e94c",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:41:54Z",
+      "event_time": "2026-10-01T02:41:54Z",
+      "kind": "transfer",
+      "ref": "1:0xc82e09d497b1cf7b4a9aec500c599d02ca4221e62d04180e8f02abbbc98566c3:tx",
+      "title": "Transfer 0xb75d\u20265add \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:42:03Z",
+      "event_time": "2026-10-01T02:42:03Z",
+      "kind": "transfer",
+      "ref": "1:0xabbe73a4fa2e11ddef3629ffeea4e96e4194f28c38ff70fe9042f8b083d203f6:tx",
+      "title": "Transfer 0x9cb8\u2026214a \u2192 0xbf3f\u202673f4",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:42:08Z",
+      "event_time": "2026-10-01T02:42:08Z",
+      "kind": "transfer",
+      "ref": "1:0x4db4c530912801cbaa4ec4ad3b4e486a48b95136a585d932265493070933cb47:tx",
+      "title": "Transfer 0xe10a\u20264ddf \u2192 0x7f7f\u2026ca8d",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:42:40Z",
+      "event_time": "2026-10-01T02:42:40Z",
+      "kind": "transfer",
+      "ref": "1:0xe401d33510b0748ced41d935cd7c22267f4ecafa109464b0013dbf73e6d1fe7a:tx",
+      "title": "Transfer 0x1c49\u20267966 \u2192 0x50ca\u2026ecd4",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:42:45Z",
+      "event_time": "2026-10-01T02:42:45Z",
+      "kind": "transfer",
+      "ref": "1:0x8ed362824c613663a5c49e5aa783822df5620ac92152cbfe31b3552a2e035ad0:tx",
+      "title": "Transfer 0xfa72\u2026f546 \u2192 0xad22\u20266bd6",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:42:57Z",
+      "event_time": "2026-10-01T02:42:57Z",
+      "kind": "transfer",
+      "ref": "1:0x79d814b0391e3228d2ea395e34eccd451618ba3420ee267b9072474aa822c20c:tx",
+      "title": "Transfer 0xd0a4\u2026f715 \u2192 0x5dcc\u20266582",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:43:11Z",
+      "event_time": "2026-10-01T02:43:11Z",
+      "kind": "transfer",
+      "ref": "1:0x5c17a0a3355e0846f1bb12595577b81c9b21719f8215a676bdd60919b8921444:tx",
+      "title": "Transfer 0x1db3\u2026250f \u2192 0x1952\u2026d24a",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:43:43Z",
+      "event_time": "2026-10-01T02:43:43Z",
+      "kind": "transfer",
+      "ref": "1:0xa48f63bea37d7ed50dfc4c432c30206d410405108aba978e59133fa06db6bfe1:tx",
+      "title": "Transfer 0x4ba6\u2026a8f5 \u2192 0x313d\u2026f240",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:45:55Z",
+      "event_time": "2026-10-01T02:45:55Z",
+      "kind": "transfer",
+      "ref": "1:0xb8320ddce8c7ebd0c09835ba0aaebd2f15abb3f5b2ba8a52605751436298581c:tx",
+      "title": "Transfer 0xe10a\u20264ddf \u2192 0xcbad\u20263b60",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:46:04Z",
+      "event_time": "2026-10-01T02:46:04Z",
+      "kind": "transfer",
+      "ref": "1:0xdfadac21f67d6acc6ecb1720ea220c3b73fae00bd8f2047c4655f1ed1e9a0692:tx",
+      "title": "Transfer 0x1c49\u20267966 \u2192 0x181e\u2026f7a9",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:46:56Z",
+      "event_time": "2026-10-01T02:46:56Z",
+      "kind": "transfer",
+      "ref": "1:0x6e14c501a1f7225ccb3700e436426b7fb45d1455388aa10564af405aba3b4329:tx",
+      "title": "Transfer 0xb2ce\u2026c2f5 \u2192 0x5f4c\u20261e38",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:47:16Z",
+      "event_time": "2026-10-01T02:47:16Z",
+      "kind": "transfer",
+      "ref": "1:0x67db24719300cb40689a25006587ff22d0a91ba24bcdb485813a36d8c7944ab6:tx",
+      "title": "Transfer 0xaeb3\u20262478 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:47:51Z",
+      "event_time": "2026-10-01T02:47:51Z",
+      "kind": "transfer",
+      "ref": "1:0x321118466b3cccfa673260922ec49c2b7ac6142598fa981f8f1f1c2e5de4ce46:tx",
+      "title": "Transfer 0xb2ce\u2026c2f5 \u2192 0x177b\u2026ed74",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:48:35Z",
+      "event_time": "2026-10-01T02:48:35Z",
+      "kind": "transfer",
+      "ref": "1:0xcfe063e3b1ea572f124a264b0231c4d559f39a6c37d0eed881c410ca85eb83f3:tx",
+      "title": "Transfer 0xbf3f\u202673f4 \u2192 0x2ff8\u2026b8b7",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:48:39Z",
+      "event_time": "2026-10-01T02:48:39Z",
+      "kind": "transfer",
+      "ref": "1:0xb1fdc38c6e5960b417cd1d64c9444292564a6af074ba559a179a703f06971439:tx",
+      "title": "Transfer 0x9cb8\u2026214a \u2192 0x02fd\u2026e173",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:49:53Z",
+      "event_time": "2026-10-01T02:49:53Z",
+      "kind": "transfer",
+      "ref": "1:0x9ac41f70274ed2d01954da082a1f00493bddf7fa63937aa6b071f80bc2540b79:tx",
+      "title": "Transfer 0xb2ce\u2026c2f5 \u2192 0x8be5\u20268658",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:51:49Z",
+      "event_time": "2026-10-01T02:51:49Z",
+      "kind": "transfer",
+      "ref": "1:0xcc37a13b45dcf32475db853488598f04cdea641c0f24ad33a33624c3934263a8:tx",
+      "title": "Transfer 0x02fd\u2026e173 \u2192 0x6afd\u202641be",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:51:56Z",
+      "event_time": "2026-10-01T02:51:56Z",
+      "kind": "transfer",
+      "ref": "1:0x3716539c1648e646cc072a5afc108dfed3d6aed823d9bffe1271cedc1734a370:tx",
+      "title": "Transfer 0xbf3f\u202673f4 \u2192 0x51bc\u202621b6",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:52:25Z",
+      "event_time": "2026-10-01T02:52:25Z",
+      "kind": "transfer",
+      "ref": "1:0x498d78c245748d7692dd25a9f5a316787865f98f6d1309084c0dc31b35512688:tx",
+      "title": "Transfer 0xb6da\u2026d2bc \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:55:48Z",
+      "event_time": "2026-10-01T02:55:48Z",
+      "kind": "transfer",
+      "ref": "1:0x16fc7a61f77838e6ab4353a5050873390c383a2d615584f7c4ba8593986c9e3d:tx",
+      "title": "Transfer 0xbf3f\u202673f4 \u2192 0x495f\u2026b96e",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T02:57:29Z",
+      "event_time": "2026-10-01T02:57:29Z",
+      "kind": "transfer",
+      "ref": "1:0xe6e8d47314bf1494cfb22f69b0af5604d7ff4f3e6441715fdaa8432540197eea:tx",
+      "title": "Transfer 0x02fd\u2026e173 \u2192 0xc63e\u2026a59c",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:00:05Z",
+      "event_time": "2026-10-01T03:00:05Z",
+      "kind": "transfer",
+      "ref": "1:0x0959431b36661fa0a857f74331d8ccfe6c55879c88ddc7cf8474b0b3021f2a27:tx",
+      "title": "Transfer 0x10ee\u2026b9e6 \u2192 0x0230\u2026a9a2",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:00:50Z",
+      "event_time": "2026-10-01T03:00:50Z",
+      "kind": "transfer",
+      "ref": "1:0x65ff28d845786e53737039df288d9e97fecf165219c3c836d02a78fe72b7ad5b:tx",
+      "title": "Transfer 0xc5b8\u2026e82a \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:01:58Z",
+      "event_time": "2026-10-01T03:01:58Z",
+      "kind": "transfer",
+      "ref": "1:0x054024ef7437cc6e0be130f79bbc305116ead0baa5a307ae611468dcfcb1f599:tx",
+      "title": "Transfer 0x838c\u202641f4 \u2192 0x321a\u20265196",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:02:03Z",
+      "event_time": "2026-10-01T03:02:03Z",
+      "kind": "transfer",
+      "ref": "1:0x5986440a3c19853aed5a729036aa29cb37769f1dc7ccc92e8152a6b0a03ea19b:tx",
+      "title": "Transfer 0xc63e\u2026a59c \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:03:10Z",
+      "event_time": "2026-10-01T03:03:10Z",
+      "kind": "transfer",
+      "ref": "1:0xcbe73f56509225fe036a58804d92a96e4b823a461481be995892c69c354caeea:tx",
+      "title": "Transfer 0x838c\u202641f4 \u2192 0x0e48\u2026aedb",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:07:29Z",
+      "event_time": "2026-10-01T03:07:29Z",
+      "kind": "transfer",
+      "ref": "1:0x7798f2e1d8208917139c39892921faeec00d1c56095afa29268beabdfba801f9:tx",
+      "title": "Transfer 0xc63e\u2026a59c \u2192 0x51cc\u2026c294",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:12:17Z",
+      "event_time": "2026-10-01T03:12:17Z",
+      "kind": "transfer",
+      "ref": "1:0x01a1cf7edb743b64f3556d6ac982549d6567ada85af0efaf5b1a40bd3a2ac28a:tx",
+      "title": "Transfer 0x321a\u20265196 \u2192 0x0230\u2026a9a2",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:14:00Z",
+      "event_time": null,
+      "retrieved_at": "2026-10-01T03:14:00Z",
+      "kind": "source_document",
+      "ref": "doc-1764a35ead18",
+      "title": "Synthetic Threat Feed",
+      "known_at_cutoff": false,
+      "status": "Unresolved"
+    },
+    {
+      "time": "2026-10-01T03:15:10Z",
+      "event_time": "2026-10-01T03:15:10Z",
+      "kind": "transfer",
+      "ref": "1:0xb1077ee68bcc78b055709018cc4a10027999a970c344553ce1f652afbb281ebc:tx",
+      "title": "Transfer 0xb20a\u20265194 \u2192 0x93ab\u20266226",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:24:50Z",
+      "event_time": "2026-10-01T03:24:50Z",
+      "kind": "transfer",
+      "ref": "1:0x4646d5c2f5fba211a8a26cbcf522f43013c231dfa4a729573493d8dd3d691a0b:tx",
+      "title": "Transfer 0xb20a\u20265194 \u2192 0xef70\u202630a7",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:30:15Z",
+      "event_time": "2026-10-01T03:30:15Z",
+      "kind": "transfer",
+      "ref": "1:0x3e3a278d1cb4f346ddab76dae9988c13cecfe915c185bed6aac7397b1deaceac:tx",
+      "title": "Transfer 0xdf23\u2026a640 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:32:26Z",
+      "event_time": "2026-10-01T03:32:26Z",
+      "kind": "transfer",
+      "ref": "1:0xbf47ce551abfa8f67d748ff6419a2bfd24c4d27c7ebf28db3d91a3f4a34ec9b8:tx",
+      "title": "Transfer 0x321a\u20265196 \u2192 0x60bd\u20266f90",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:46:28Z",
+      "event_time": "2026-10-01T03:46:28Z",
+      "kind": "transfer",
+      "ref": "1:0x2d8b8c40c46a95730f817a0158b185510bc73c7036ce60a196f3860f3e84ca84:tx",
+      "title": "Transfer 0xb20a\u20265194 \u2192 0x8785\u2026869e",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:47:13Z",
+      "event_time": "2026-10-01T03:47:13Z",
+      "kind": "transfer",
+      "ref": "1:0x1d4baca64a10a0ee91f114569cd19d9b084d6ede4fcf6ba71a3fae99ea12c7d7:tx",
+      "title": "Transfer 0xb20a\u20265194 \u2192 0x3bb2\u20268e43",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:47:15Z",
+      "event_time": "2026-10-01T03:47:15Z",
+      "kind": "transfer",
+      "ref": "1:0x3362cde5886d75a3a2a509a5e197cee56b62052266a68d013ec682889a1c51da:tx",
+      "title": "Transfer 0x0e48\u2026aedb \u2192 0x8e58\u202667fe",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T03:59:22Z",
+      "event_time": "2026-10-01T03:59:22Z",
+      "kind": "transfer",
+      "ref": "1:0x60017bd176172369c19405f6918afe5b6f4dfe54d7b2c4ac4687f3b90f712193:tx",
+      "title": "Transfer 0xbaed\u202658ba \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:05:52Z",
+      "event_time": "2026-10-01T04:05:52Z",
+      "kind": "transfer",
+      "ref": "1:0x4fe3a590486b7a0ec9451515adeaf05849689fc38a84107117dddfdfee09a686:tx",
+      "title": "Transfer 0x09ca\u20268ffb \u2192 0x10ee\u2026b9e6",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:24:00Z",
+      "event_time": "2026-10-01T04:14:00Z",
+      "retrieved_at": "2026-10-01T04:24:00Z",
+      "kind": "source_document",
+      "ref": "doc-178f8b682d40",
+      "title": "Exploit initial findings",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T04:29:05Z",
+      "event_time": "2026-10-01T04:29:05Z",
+      "kind": "transfer",
+      "ref": "1:0x2a1e41c806878db21f9969db560d118358c2d302c5962ec01338cc2fdcd600e0:tx",
+      "title": "Transfer 0x5662\u2026e10c \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:29:23Z",
+      "event_time": "2026-10-01T04:29:23Z",
+      "kind": "transfer",
+      "ref": "1:0x756ad8be97ca0b5a159aeb4e249739600ab0b31771b79c9a54fd3a14c0ad16ef:tx",
+      "title": "Transfer 0xe84a\u2026b811 \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:30:12Z",
+      "event_time": "2026-10-01T04:30:12Z",
+      "kind": "transfer",
+      "ref": "1:0x583abef41fd14e1444db94288b2b0aa8d0e115321d792524839be08fa5cbef73:tx",
+      "title": "Transfer 0xda1a\u202604e2 \u2192 0xd94b\u20265226",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:47:45Z",
+      "event_time": "2026-10-01T04:47:45Z",
+      "kind": "transfer",
+      "ref": "1:0x04d9ba28b9b8b5087c3b0919b6c48992026ea1807f7b5e8b75a8e83ead17d693:tx",
+      "title": "Transfer 0x10ee\u2026b9e6 \u2192 0x60bd\u20266f90",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:48:08Z",
+      "event_time": "2026-10-01T04:48:08Z",
+      "kind": "transfer",
+      "ref": "1:0x50e3105a985d9804488696cb1d30a719a32577665e84db23bf0944580dfc622e:tx",
+      "title": "Transfer 0x0001\u20262925 \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:56:38Z",
+      "event_time": "2026-10-01T04:56:38Z",
+      "kind": "transfer",
+      "ref": "1:0x32bb70cc4a90dc4fb7f353d5c7c3901161d3f43f4a793eb81c612d74be773d6a:tx",
+      "title": "Transfer 0xb7cf\u2026fa95 \u2192 0x838c\u202641f4",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T04:58:26Z",
+      "event_time": "2026-10-01T04:58:26Z",
+      "kind": "transfer",
+      "ref": "1:0xb4f301d93270e41e44902ba60d8075d61a096c40d7d484a71fb88fa063d6b11b:tx",
+      "title": "Transfer 0x10ee\u2026b9e6 \u2192 0xb611\u202603ba",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:00:56Z",
+      "event_time": "2026-10-01T05:00:56Z",
+      "kind": "transfer",
+      "ref": "1:0x478c721e14b199172881a7220a82644fb3c44b89374c6202485d11fcd3e6180b:tx",
+      "title": "Transfer 0xace0\u20266f35 \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:14:00Z",
+      "event_time": "2026-08-02T02:14:00Z",
+      "retrieved_at": "2026-10-01T05:14:00Z",
+      "kind": "source_document",
+      "ref": "doc-ea9d0d8722e2",
+      "title": "Exchange label",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T05:18:31Z",
+      "event_time": "2026-10-01T05:18:31Z",
+      "kind": "transfer",
+      "ref": "1:0x2ae9d9931aa740b1484eecf629ab50eec1c94d89f42887f934f8c1d24b6ed11f:tx",
+      "title": "Transfer 0x2241\u2026ed8b \u2192 0x51c9\u20266817",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:27:50Z",
+      "event_time": "2026-10-01T05:27:50Z",
+      "kind": "transfer",
+      "ref": "1:0x7e3f7292473bac0b0ae00586c58602bc7807ab97dca028a1da979ced3a5986e0:tx",
+      "title": "Transfer 0xb611\u202603ba \u2192 0xda1a\u202604e2",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:32:16Z",
+      "event_time": "2026-10-01T05:32:16Z",
+      "kind": "transfer",
+      "ref": "1:0x16f945739bc4f4cf237a69d3ace4db1a1db06a6df078c0c2c60fc52dbb5ced91:tx",
+      "title": "Transfer 0x09ca\u20268ffb \u2192 0x0230\u2026a9a2",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:49:59Z",
+      "event_time": "2026-10-01T05:49:59Z",
+      "kind": "transfer",
+      "ref": "1:0xe16bb9a27b6411026e0b7fa5382b5d64861a4890451366d3ada2e2461b9c6226:tx",
+      "title": "Transfer 0xda1a\u202604e2 \u2192 0x09ca\u20268ffb",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T05:58:44Z",
+      "event_time": "2026-10-01T05:58:44Z",
+      "kind": "transfer",
+      "ref": "1:0xc9b8e1b52bde92efcf238871d1ef152433b40707ab9f7419e30ee0c08238308b:tx",
+      "title": "Transfer 0xb7ff\u20268e75 \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:00:40Z",
+      "event_time": "2026-10-01T06:00:40Z",
+      "kind": "transfer",
+      "ref": "1:0x8bf0dd1e7d32cad9e5de59408e439b2ea91c8f67cd0800a0354735bd7b9fd8d0:tx",
+      "title": "Transfer 0x05e3\u20262c9d \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:01:42Z",
+      "event_time": "2026-10-01T06:01:42Z",
+      "kind": "transfer",
+      "ref": "1:0x60876272dd4a4cfc90ddee4562805d0f4dcc8548347407b177e625dcef1955fe:tx",
+      "title": "Transfer 0xd94b\u20265226 \u2192 0xda1a\u202604e2",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:02:47Z",
+      "event_time": "2026-10-01T06:02:47Z",
+      "kind": "transfer",
+      "ref": "1:0xf221a4f5f344e2b7cab9adb29e9d673b2d843b9db8763b002b7299abf323e60d:tx",
+      "title": "Transfer 0xb611\u202603ba \u2192 0xb611\u202603ba",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:14:00Z",
+      "event_time": "2025-08-27T02:14:00Z",
+      "retrieved_at": "2026-10-01T06:14:00Z",
+      "kind": "source_document",
+      "ref": "doc-c63a56f3d7c2",
+      "title": "Old phishing thread",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T06:19:54Z",
+      "event_time": "2026-10-01T06:19:54Z",
+      "kind": "transfer",
+      "ref": "1:0xaa94c573035a77d183ac2ca128ca7201dcbf027bc6fa6367341633f0f41637dd:tx",
+      "title": "Transfer 0x2ff8\u202688b7 \u2192 0x2db2\u20262535",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:31:00Z",
+      "event_time": "2026-10-01T06:31:00Z",
+      "kind": "transfer",
+      "ref": "1:0x21c92d41316b7e63c0589062a2e1c37541092069ae869473823da0be0f746e8e:tx",
+      "title": "Transfer 0x10ee\u2026b9e6 \u2192 0x0e48\u2026aedb",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:44:00Z",
+      "event_time": null,
+      "retrieved_at": "2026-10-01T06:44:00Z",
+      "kind": "source_document",
+      "ref": "doc-29f2794ee3dc",
+      "title": "Transaction note",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T06:55:57Z",
+      "event_time": "2026-10-01T06:55:57Z",
+      "kind": "transfer",
+      "ref": "1:0x9722fc0e6001f410bbce7b8cbf3d91b51b657aac783b4efb6dedb3e6be77c05b:tx",
+      "title": "Transfer 0xa40f\u202637d0 \u2192 0xb20a\u20265194",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T06:58:15Z",
+      "event_time": "2026-10-01T06:58:15Z",
+      "kind": "transfer",
+      "ref": "1:0x30283eb620557aaa74ab5c9308520aa92bc256b2811a12f55d39664459c2e562:tx",
+      "title": "Transfer 0x4d10\u2026861a \u2192 0x23e6\u2026f093",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T07:19:00Z",
+      "event_time": "2026-10-01T07:14:00Z",
+      "retrieved_at": "2026-10-01T07:19:00Z",
+      "kind": "source_document",
+      "ref": "doc-338400ded7ec",
+      "title": "OTC desk listing",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T07:27:44Z",
+      "event_time": "2026-10-01T07:27:44Z",
+      "kind": "transfer",
+      "ref": "1:0x976a52ac5db9e322f5cd27e23e6d779ecb289000ccf7f3d0ac68db6fd547475b:tx",
+      "title": "Transfer 0x838c\u202641f4 \u2192 0x10ee\u2026b9e6",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T07:34:41Z",
+      "event_time": "2026-10-01T07:34:41Z",
+      "kind": "transfer",
+      "ref": "1:0xa8fa3fd3b15fd86584e5373a03cc05af10bc10327ae3c355653354256de32544:tx",
+      "title": "Transfer 0x48f7\u2026c6aa \u2192 0x122e\u20264488",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T07:56:49Z",
+      "event_time": "2026-10-01T07:56:49Z",
+      "kind": "transfer",
+      "ref": "1:0x067d7196d93ac24fefc9e229e78d3ce5f9d7c9333cdbcfcf679307a9f037cb72:tx",
+      "title": "Transfer 0x8e58\u202667fe \u2192 0xb7cf\u2026fa95",
+      "known_at_cutoff": false,
+      "status": "Observed"
+    },
+    {
+      "time": "2026-10-01T08:16:00Z",
+      "event_time": "2026-10-01T08:14:00Z",
+      "retrieved_at": "2026-10-01T08:16:00Z",
+      "kind": "source_document",
+      "ref": "doc-6fda8cc2ca19",
+      "title": "Shortened address mention",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    },
+    {
+      "time": "2026-10-01T09:15:00Z",
+      "event_time": "2026-10-01T09:14:00Z",
+      "retrieved_at": "2026-10-01T09:15:00Z",
+      "kind": "source_document",
+      "ref": "doc-eff948d1033a",
+      "title": "Republished report",
+      "known_at_cutoff": false,
+      "status": "Source-reported"
+    }
+  ],
+  "excluded": {
+    "transfers_after_cutoff": 71,
+    "documents_after_cutoff": [
+      {
+        "doc_id": "doc-178f8b682d40",
+        "available_at": "2026-10-01T04:24:00Z"
+      },
+      {
+        "doc_id": "doc-29f2794ee3dc",
+        "available_at": "2026-10-01T06:44:00Z"
+      },
+      {
+        "doc_id": "doc-338400ded7ec",
+        "available_at": "2026-10-01T07:19:00Z"
+      },
+      {
+        "doc_id": "doc-6fda8cc2ca19",
+        "available_at": "2026-10-01T08:16:00Z"
+      },
+      {
+        "doc_id": "doc-c63a56f3d7c2",
+        "available_at": "2026-10-01T06:14:00Z"
+      },
+      {
+        "doc_id": "doc-ea9d0d8722e2",
+        "available_at": "2026-10-01T05:14:00Z"
+      },
+      {
+        "doc_id": "doc-eff948d1033a",
+        "available_at": "2026-10-01T09:15:00Z"
+      }
+    ]
+  },
+  "graph_stats": {
+    "nodes": 33,
+    "edges": 36,
+    "weak_components": 2,
+    "incident_component_size": 31,
+    "has_directed_cycle": false,
+    "self_loops": 0,
+    "repeated_edge_pairs": 2,
+    "duplicates_dropped_at_ingestion": 2,
+    "time_respecting_reachable": 28,
+    "assets": [
+      "1:erc20:0xdb5ee5c254d21c5c45b12a3fd4b38b3d7a5017b1",
+      "1:native"
+    ],
+    "events_excluded_by_cutoff": 71
+  },
+  "osint_documents": [],
+  "hindsight_guard": "Records not available at the cutoff are excluded before any computation."
+}
