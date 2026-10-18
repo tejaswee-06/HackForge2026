@@ -1,0 +1,314 @@
+{
+  "chain_id": 1,
+  "data_mode": "synthetic",
+  "dataset_version": "1.0.0",
+  "description": "Small deterministic simulated incident: a split, a multi-hop path, a cycle, a duplicate record, a failed transaction, an unlike-token transfer and a disconnected pair. Amounts are scaled-down placeholders.",
+  "erc20_rows": [
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000005",
+      "contractAddress": "0x000000000000000000000000000000000000f001",
+      "from": "0x000000000000000000000000000000000000a002",
+      "hash": "0xa3c1900f295e374bbf65d1713060439f836f68f2526dd5187ee49d28fe9827fe",
+      "logIndex": "12",
+      "timeStamp": "1790821320",
+      "to": "0x000000000000000000000000000000000000a004",
+      "tokenDecimal": "6",
+      "tokenSymbol": "SYNTH",
+      "value": "1000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000006",
+      "contractAddress": "0x000000000000000000000000000000000000f001",
+      "from": "0x000000000000000000000000000000000000a004",
+      "hash": "0xde2f41b245e96d4228b04d36a5f0009ec607b58f8444399644c48053d61fad27",
+      "logIndex": "3",
+      "timeStamp": "1790821560",
+      "to": "0x000000000000000000000000000000000000a007",
+      "tokenDecimal": "6",
+      "tokenSymbol": "SYNTH",
+      "value": "400000"
+    }
+  ],
+  "expected": {
+    "counts": {
+      "duplicates_dropped": 1,
+      "graph_edges": 11,
+      "graph_nodes": 10,
+      "raw_erc20_rows": 2,
+      "raw_native_rows": 11,
+      "unique_events": 12,
+      "weakly_connected_components": 2
+    },
+    "cycle": [
+      "0x000000000000000000000000000000000000a003",
+      "0x000000000000000000000000000000000000a005",
+      "0x000000000000000000000000000000000000a006",
+      "0x000000000000000000000000000000000000a003"
+    ],
+    "disconnected_addresses": [
+      "0x000000000000000000000000000000000000b001",
+      "0x000000000000000000000000000000000000b002"
+    ],
+    "excluded_failed_event_ids": [
+      "1:0x7a914be84e1ce00171a5e8c79d0c79b1b2a1d68a97256fbc6474762f252a17db:tx"
+    ],
+    "native_asset_id": "1:native",
+    "notes": "Unlike assets are never chained: X0 has no token edges, so X0 yields no token paths. X0->X2->X5->X6->X3 stops at X3 because X3->X5 (t+9) precedes the arrival (t+20): time-ordered.",
+    "paths_native_from_start_depth2": [
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "99.000000000000000000",
+        "bottleneck_raw": "99000000000000000000",
+        "event_ids": [
+          "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+          "1:0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a001",
+          "1:0x000000000000000000000000000000000000a003"
+        ],
+        "terminated_reason": "max_depth"
+      },
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "29.000000000000000000",
+        "bottleneck_raw": "29000000000000000000",
+        "event_ids": [
+          "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "1:0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a002",
+          "1:0x000000000000000000000000000000000000a005"
+        ],
+        "terminated_reason": "max_depth"
+      },
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "30.000000000000000000",
+        "bottleneck_raw": "30000000000000000000",
+        "event_ids": [
+          "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "1:0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a002",
+          "1:0x000000000000000000000000000000000000a004"
+        ],
+        "terminated_reason": "leaf"
+      }
+    ],
+    "paths_native_from_start_depth6": [
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "98.000000000000000000",
+        "bottleneck_raw": "98000000000000000000",
+        "event_ids": [
+          "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+          "1:0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6:tx",
+          "1:0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4:tx",
+          "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a001",
+          "1:0x000000000000000000000000000000000000a003",
+          "1:0x000000000000000000000000000000000000a005",
+          "1:0x000000000000000000000000000000000000a006"
+        ],
+        "terminated_reason": "cycle_blocked"
+      },
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "5.000000000000000000",
+        "bottleneck_raw": "5000000000000000000",
+        "event_ids": [
+          "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "1:0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7:tx",
+          "1:0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89:tx",
+          "1:0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a002",
+          "1:0x000000000000000000000000000000000000a005",
+          "1:0x000000000000000000000000000000000000a006",
+          "1:0x000000000000000000000000000000000000a003"
+        ],
+        "terminated_reason": "leaf"
+      },
+      {
+        "asset_id": "1:native",
+        "bottleneck_normalized": "30.000000000000000000",
+        "bottleneck_raw": "30000000000000000000",
+        "event_ids": [
+          "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+          "1:0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65:tx"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a000",
+          "1:0x000000000000000000000000000000000000a002",
+          "1:0x000000000000000000000000000000000000a004"
+        ],
+        "terminated_reason": "leaf"
+      }
+    ],
+    "paths_token_from_X2": [
+      {
+        "asset_id": "1:erc20:0x000000000000000000000000000000000000f001",
+        "bottleneck_normalized": "0.400000",
+        "bottleneck_raw": "400000",
+        "event_ids": [
+          "1:0xa3c1900f295e374bbf65d1713060439f836f68f2526dd5187ee49d28fe9827fe:log-12",
+          "1:0xde2f41b245e96d4228b04d36a5f0009ec607b58f8444399644c48053d61fad27:log-3"
+        ],
+        "node_ids": [
+          "1:0x000000000000000000000000000000000000a002",
+          "1:0x000000000000000000000000000000000000a004",
+          "1:0x000000000000000000000000000000000000a007"
+        ],
+        "terminated_reason": "leaf"
+      }
+    ],
+    "token_asset_id": "1:erc20:0x000000000000000000000000000000000000f001",
+    "token_contract": "0x000000000000000000000000000000000000f001"
+  },
+  "fixture_retrieved_at": "2026-10-01T00:00:00+00:00",
+  "limitations": [
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution.",
+    "Graph connectivity and timing are observed relationships, not proof of common ownership."
+  ],
+  "name": "Ghost Attacks - simulated $42M exploit flow (SYNTHETIC)",
+  "native_rows": [
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000001",
+      "from": "0x000000000000000000000000000000000000a000",
+      "hash": "0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80",
+      "isError": "0",
+      "timeStamp": "1790820840",
+      "to": "0x000000000000000000000000000000000000a001",
+      "txreceipt_status": "1",
+      "value": "100000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000001",
+      "from": "0x000000000000000000000000000000000000a000",
+      "hash": "0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4",
+      "isError": "0",
+      "timeStamp": "1790820900",
+      "to": "0x000000000000000000000000000000000000a002",
+      "txreceipt_status": "1",
+      "value": "60000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000001",
+      "from": "0x000000000000000000000000000000000000a000",
+      "hash": "0x7a914be84e1ce00171a5e8c79d0c79b1b2a1d68a97256fbc6474762f252a17db",
+      "isError": "1",
+      "timeStamp": "1790820960",
+      "to": "0x000000000000000000000000000000000000a007",
+      "txreceipt_status": "0",
+      "value": "5000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000002",
+      "from": "0x000000000000000000000000000000000000b001",
+      "hash": "0xe23ecb32400b6f3dd0e6b844df1ad10cd84dc720af1152c8e9f35a474b243b32",
+      "isError": "0",
+      "timeStamp": "1790821020",
+      "to": "0x000000000000000000000000000000000000b002",
+      "txreceipt_status": "1",
+      "value": "7000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000003",
+      "from": "0x000000000000000000000000000000000000a001",
+      "hash": "0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6",
+      "isError": "0",
+      "timeStamp": "1790821140",
+      "to": "0x000000000000000000000000000000000000a003",
+      "txreceipt_status": "1",
+      "value": "99000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000003",
+      "from": "0x000000000000000000000000000000000000a001",
+      "hash": "0xa3d0604ea690562b9ad6f5bcf28cee148409b213712b3107931f7f8f787ddfd6",
+      "isError": "0",
+      "timeStamp": "1790821140",
+      "to": "0x000000000000000000000000000000000000a003",
+      "txreceipt_status": "1",
+      "value": "99000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000004",
+      "from": "0x000000000000000000000000000000000000a002",
+      "hash": "0x8778f5bc64ce21a7d8c06289ef09dfee70e076b79d49ebfd54d1a4da3f60be65",
+      "isError": "0",
+      "timeStamp": "1790821200",
+      "to": "0x000000000000000000000000000000000000a004",
+      "txreceipt_status": "1",
+      "value": "30000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000004",
+      "from": "0x000000000000000000000000000000000000a002",
+      "hash": "0xaf5ae07577c31737b4ef781163be129369594eb4d18bf06ad27a22177f3541f7",
+      "isError": "0",
+      "timeStamp": "1790821260",
+      "to": "0x000000000000000000000000000000000000a005",
+      "txreceipt_status": "1",
+      "value": "29000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000005",
+      "from": "0x000000000000000000000000000000000000a003",
+      "hash": "0xc5aa3ca7e94665b6555cabc23348e6acd09e096a4ebce12afbdc062ffc854aa4",
+      "isError": "0",
+      "timeStamp": "1790821380",
+      "to": "0x000000000000000000000000000000000000a005",
+      "txreceipt_status": "1",
+      "value": "98000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000007",
+      "from": "0x000000000000000000000000000000000000a005",
+      "hash": "0x48b896ce37328d3083bdd36928e7b959aa01c22fe86189a2d054e52a03c19c89",
+      "isError": "0",
+      "timeStamp": "1790821740",
+      "to": "0x000000000000000000000000000000000000a006",
+      "txreceipt_status": "1",
+      "value": "120000000000000000000"
+    },
+    {
+      "astraSynthetic": true,
+      "blockNumber": "18000009",
+      "from": "0x000000000000000000000000000000000000a006",
+      "hash": "0xb396797a3c9892475b57ad8ff78167f2b0338826d338d1c2131c1006bd23bb8b",
+      "isError": "0",
+      "timeStamp": "1790822040",
+      "to": "0x000000000000000000000000000000000000a003",
+      "txreceipt_status": "1",
+      "value": "5000000000000000000"
+    }
+  ],
+  "scenario_id": "ghost_attacks_synthetic_v1",
+  "start_address": "0x000000000000000000000000000000000000a000",
+  "synthetic": true,
+  "synthetic_notice": "ALL RECORDS IN THIS SCENARIO ARE SYNTHETIC TEST DATA. Addresses, hashes, amounts and timestamps are invented and do not correspond to any real blockchain activity or real person."
+}
