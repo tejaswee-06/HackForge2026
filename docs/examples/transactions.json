@@ -1,0 +1,100 @@
+{
+  "analysis_version": "astra-1.0.0",
+  "data_cutoff": "2026-10-01T02:34:00Z",
+  "data_mode": "synthetic",
+  "generated_at": "2026-10-17T22:52:40.253483Z",
+  "investigation_id": "inv-ghost_attacks_synthetic_v1",
+  "limit": 3,
+  "limitations": [
+    "ALL RECORDS IN THIS SCENARIO ARE SYNTHETIC TEST DATA. Addresses, hashes, amounts and timestamps are invented and do not correspond to any real blockchain activity or real person.",
+    "Simulated incident; results demonstrate the pipeline, not real-world attribution.",
+    "Graph connectivity and timing are observed relationships, not proof of common ownership."
+  ],
+  "offset": 0,
+  "sources": [
+    {
+      "data_mode": "synthetic",
+      "provider": "astra-fixture",
+      "reference": "ghost_attacks_synthetic_v1@1.0.0",
+      "retrieved_at": "2026-10-01T00:00:00Z"
+    }
+  ],
+  "total": 11,
+  "transactions": [
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000001,
+      "chain_id": 1,
+      "event_id": "1:0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80:tx",
+      "event_type": "native_transfer",
+      "from_address": "0x000000000000000000000000000000000000a000",
+      "log_index": null,
+      "normalized_value": "100.000000000000000000",
+      "raw_value": "100000000000000000000",
+      "source": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "status": "success",
+      "timestamp": "2026-10-01T02:14:00Z",
+      "to_address": "0x000000000000000000000000000000000000a001",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x5df55d6f9cf7f138a367162a49011c0397168c5cfc877fc44b002509f1d5db80"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000001,
+      "chain_id": 1,
+      "event_id": "1:0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4:tx",
+      "event_type": "native_transfer",
+      "from_address": "0x000000000000000000000000000000000000a000",
+      "log_index": null,
+      "normalized_value": "60.000000000000000000",
+      "raw_value": "60000000000000000000",
+      "source": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "status": "success",
+      "timestamp": "2026-10-01T02:15:00Z",
+      "to_address": "0x000000000000000000000000000000000000a002",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0x371e86b7f7af030792b30f871eb37239604960826465f7a467fcec77661973c4"
+    },
+    {
+      "asset_id": "1:native",
+      "asset_symbol": "ETH",
+      "asset_type": "native",
+      "block_number": 18000002,
+      "chain_id": 1,
+      "event_id": "1:0xe23ecb32400b6f3dd0e6b844df1ad10cd84dc720af1152c8e9f35a474b243b32:tx",
+      "event_type": "native_transfer",
+      "from_address": "0x000000000000000000000000000000000000b001",
+      "log_index": null,
+      "normalized_value": "7.000000000000000000",
+      "raw_value": "7000000000000000000",
+      "source": {
+        "data_mode": "synthetic",
+        "provider": "astra-fixture",
+        "reference": "ghost_attacks_synthetic_v1@1.0.0",
+        "retrieved_at": "2026-10-01T00:00:00Z"
+      },
+      "status": "success",
+      "timestamp": "2026-10-01T02:17:00Z",
+      "to_address": "0x000000000000000000000000000000000000b002",
+      "token_contract": null,
+      "token_decimals": 18,
+      "transaction_hash": "0xe23ecb32400b6f3dd0e6b844df1ad10cd84dc720af1152c8e9f35a474b243b32"
+    }
+  ]
+}
