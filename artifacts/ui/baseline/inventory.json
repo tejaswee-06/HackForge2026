@@ -1,0 +1,175 @@
+{
+  "landingButtons": [
+    "Enter ASTRA dashboard"
+  ],
+  "dock": [
+    "Dock",
+    "Overview",
+    "Graph",
+    "Lead queue",
+    "Evidence",
+    "OSINT",
+    "Timeline",
+    "Hypotheses",
+    "Evaluation lab",
+    "Casebook",
+    "Settings"
+  ],
+  "pages": {
+    "Overview": {
+      "eyebrow": "INVESTIGATION WORKSPACE / 01",
+      "h1": "See the signal.\nFollow the evidence.",
+      "panels": [
+        "Operational snapshot",
+        "Transaction activity",
+        "Priority signals",
+        "Latest transaction events",
+        "Investigation readiness"
+      ],
+      "buttonCount": 7,
+      "buttons": [
+        "Export case",
+        "Open investigation",
+        "View all",
+        "01\nTemporal relay pattern\n0x7a1b…91c0\n94\nscore",
+        "02\nShared funding cluster\n0x3c91…a8e4\n87\nscore",
+        "03\nPublic indicator match\n0x91d2…3f11\n79\nscore",
+        "Explore transaction graph"
+      ]
+    },
+    "Graph": {
+      "eyebrow": "INVESTIGATE / GRAPH EXPLORER",
+      "h1": "Follow the flow.",
+      "panels": [
+        "Wallet 0x7a1b",
+        "Path transactions"
+      ],
+      "buttonCount": 16,
+      "buttons": [
+        "Export graph",
+        "＋\nExpand graph",
+        "Labels on",
+        "Flow on",
+        "−",
+        "+",
+        "Exploit wallet\nOrigin · observed",
+        "Relay 04\nForwarding node",
+        "Cluster B\nCandidate cluster",
+        "Wallet 0x7a1b\nLead · 94/100",
+        "Service endpoint\nUnresolved boundary",
+        "Relay 09\nObserved transfer",
+        "＋",
+        "−",
+        "Open evidence inspector",
+        "View all"
+      ]
+    },
+    "Lead queue": {
+      "eyebrow": "INVESTIGATE / LEAD QUEUE",
+      "h1": "The next best lead.",
+      "panels": [
+        "Ranked leads",
+        "Temporal relay pattern"
+      ],
+      "buttonCount": 6,
+      "buttons": [
+        "Export queue",
+        "94\n/100\nTemporal relay pattern\nCritical\n0x7a1b…91c0\n3.2s median forwarding delta · 2m ago",
+        "87\n/100\nShared funding cluster\nHigh\n0x3c91…a8e4\nCommon funding source · 6m ago",
+        "79\n/100\nPublic indicator match\nHigh\n0x91d2…3f11\nRepository reference found · 11m ago",
+        "68\n/100\nRapid peel sequence\nReview\n0xb402…cc73\nUnequal output amounts · 18m ago",
+        "Inspect linked evidence"
+      ]
+    },
+    "Evidence": {
+      "eyebrow": "VERIFY / EVIDENCE INSPECTOR",
+      "h1": "Every claim has a trail.",
+      "panels": [
+        "Evidence records",
+        "Evidence sensitivity"
+      ],
+      "buttonCount": 6,
+      "buttons": [
+        "Export evidence",
+        "Supporting\n3",
+        "Contradicting\n1",
+        "Context\n1",
+        "Toggle latency clue",
+        "Reset sensitivity test"
+      ]
+    },
+    "OSINT": {
+      "eyebrow": "INTELLIGENCE / SOURCE REGISTRY",
+      "h1": "Know where the signal came from.",
+      "panels": [
+        "Source inventory"
+      ],
+      "buttonCount": 1,
+      "buttons": [
+        "Refresh health"
+      ]
+    },
+    "Timeline": {
+      "eyebrow": "RECONSTRUCT / INVESTIGATION REPLAY",
+      "h1": "Rewind the investigation.",
+      "panels": [],
+      "buttonCount": 0,
+      "buttons": []
+    },
+    "Hypotheses": {
+      "eyebrow": "CHALLENGE / HYPOTHESES",
+      "h1": "Test the other explanation.",
+      "panels": [
+        "Incident-related fund movement",
+        "Routine service / market behaviour",
+        "Insufficient evidence",
+        "What happens if the strongest clue is removed?"
+      ],
+      "buttonCount": 2,
+      "buttons": [
+        "Reset comparison",
+        "Toggle clue"
+      ]
+    },
+    "Evaluation lab": {
+      "eyebrow": "VALIDATE / EVALUATION LAB",
+      "h1": "Measure what actually works.",
+      "panels": [
+        "Class-level performance",
+        "Next evaluation actions"
+      ],
+      "buttonCount": 0,
+      "buttons": []
+    },
+    "Casebook": {
+      "eyebrow": "DELIVER / CASEBOOK",
+      "h1": "Turn analysis into evidence.",
+      "panels": [
+        "Recent artifacts"
+      ],
+      "buttonCount": 2,
+      "buttons": [
+        "Generate casebook",
+        "Preview report"
+      ]
+    },
+    "Settings": {
+      "eyebrow": "SYSTEM / SETTINGS & SOURCE HEALTH",
+      "h1": "Tune your workspace.",
+      "panels": [
+        "Appearance",
+        "Connected systems",
+        "Security & data handling"
+      ],
+      "buttonCount": 2,
+      "buttons": [
+        "Light",
+        "Dark"
+      ]
+    }
+  },
+  "errors": [
+    "console: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "console: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+}
