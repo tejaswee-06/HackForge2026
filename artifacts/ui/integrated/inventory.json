@@ -1,0 +1,204 @@
+{
+  "landingButtons": [
+    "Enter ASTRA dashboard"
+  ],
+  "dock": [
+    "Dock",
+    "Overview",
+    "Graph",
+    "Lead queue",
+    "Evidence",
+    "OSINT",
+    "Timeline",
+    "Hypotheses",
+    "Evaluation lab",
+    "Casebook",
+    "Settings"
+  ],
+  "pages": {
+    "Overview": {
+      "eyebrow": "INVESTIGATION WORKSPACE / 01",
+      "h1": "See the signal.\nFollow the evidence.",
+      "panels": [
+        "Operational snapshot",
+        "Transaction activity",
+        "Priority signals",
+        "Latest transaction events",
+        "Investigation readiness"
+      ],
+      "buttonCount": 9,
+      "buttons": [
+        "Export case",
+        "Open investigation",
+        "Open investigation graph",
+        "View all",
+        "01\nPublic indicator match\n0x0000…a002\n71\nscore",
+        "02\nPublic indicator match\n0x0000…a001\n68\nscore",
+        "03\nPublic indicator match\n0x0000…a006\n59\nscore",
+        "Refresh",
+        "Explore transaction graph"
+      ]
+    },
+    "Graph": {
+      "eyebrow": "INVESTIGATE / GRAPH EXPLORER",
+      "h1": "Follow the flow.",
+      "panels": [
+        "0x0000…a002",
+        "Path transactions"
+      ],
+      "buttonCount": 19,
+      "buttons": [
+        "Export graph",
+        "＋\nExpand graph",
+        "Labels on",
+        "Flow on",
+        "−",
+        "+",
+        "Incident origin\nOrigin · observed",
+        "0x0000…a002\nLead #1 · 71/100",
+        "0x0000…a001\nLead #2 · 68/100",
+        "0x0000…a005\nDisputed · 57/100",
+        "0x0000…a006\nLead #3 · 59/100",
+        "0x0000…a003\nLead #5 · 53/100",
+        "0x0000…a004\nLead #6 · 38/100",
+        "0x0000…a007\nUnresolved boundary",
+        "＋",
+        "−",
+        "Copy address",
+        "Open evidence inspector",
+        "View all"
+      ]
+    },
+    "Lead queue": {
+      "eyebrow": "INVESTIGATE / LEAD QUEUE",
+      "h1": "The next best lead.",
+      "panels": [
+        "Ranked leads",
+        "Public indicator match"
+      ],
+      "buttonCount": 9,
+      "buttons": [
+        "Export queue",
+        "71\n/100\nPublic indicator match\nMedium\n0x0000…a002\nTime-ordered path from origin: 1 hop(s) · +1m 00s after origin",
+        "68\n/100\nPublic indicator match\nMedium\n0x0000…a001\nTime-ordered path from origin: 1 hop(s) · +0s after origin",
+        "59\n/100\nPublic indicator match\nMedium\n0x0000…a006\nRapid forwarding ratio 1.00 (median 300s receipt→forward) · +15m 00s after origin",
+        "57\n/100\nConflicting public-source claims\nMedium\n0x0000…a005\nRapid forwarding ratio 1.00 (median 360s receipt→forward) · +7m 00s after origin",
+        "53\n/100\nPublic indicator match\nMedium\n0x0000…a003\nRapid forwarding ratio 1.00 (median 240s receipt→forward) · +5m 00s after origin",
+        "38\n/100\nRapid forwarding relay\nLow\n0x0000…a004\nRapid forwarding ratio 1.00 (median 240s receipt→forward) · +6m 00s after origin",
+        "8\n/100\nTraced value recipient\nLow\n0x0000…a007\nTime-ordered path from origin: 3 hop(s) · +12m 00s after origin",
+        "Inspect linked evidence"
+      ]
+    },
+    "Evidence": {
+      "eyebrow": "VERIFY / EVIDENCE INSPECTOR",
+      "h1": "Every claim has a trail.",
+      "panels": [
+        "Evidence records",
+        "Evidence sensitivity"
+      ],
+      "buttonCount": 10,
+      "buttons": [
+        "Export evidence",
+        "Supporting\n4",
+        "Contradicting\n0",
+        "Context\n4",
+        "Open record",
+        "Open record",
+        "Open record",
+        "Open record",
+        "Toggle latency clue",
+        "Reset sensitivity test"
+      ]
+    },
+    "OSINT": {
+      "eyebrow": "INTELLIGENCE / SOURCE REGISTRY",
+      "h1": "Know where the signal came from.",
+      "panels": [
+        "Collected documents"
+      ],
+      "buttonCount": 8,
+      "buttons": [
+        "Refresh health",
+        "Source details",
+        "Source details",
+        "Source details",
+        "Source details",
+        "Source details",
+        "Source details",
+        "Source details"
+      ]
+    },
+    "Timeline": {
+      "eyebrow": "RECONSTRUCT / INVESTIGATION REPLAY",
+      "h1": "Rewind the investigation.",
+      "panels": [],
+      "buttonCount": 0,
+      "buttons": []
+    },
+    "Hypotheses": {
+      "eyebrow": "CHALLENGE / HYPOTHESES",
+      "h1": "Test the other explanation.",
+      "panels": [
+        "Incident-related fund movement",
+        "Routine service / market behaviour",
+        "Insufficient evidence",
+        "What happens if the strongest clue is removed?"
+      ],
+      "buttonCount": 2,
+      "buttons": [
+        "Reset comparison",
+        "Toggle clue"
+      ]
+    },
+    "Evaluation lab": {
+      "eyebrow": "VALIDATE / EVALUATION LAB",
+      "h1": "Measure what actually works.",
+      "panels": [
+        "Ranking quality vs baseline",
+        "Next evaluation actions"
+      ],
+      "buttonCount": 1,
+      "buttons": [
+        "Re-run benchmark"
+      ]
+    },
+    "Casebook": {
+      "eyebrow": "DELIVER / CASEBOOK",
+      "h1": "Turn analysis into evidence.",
+      "panels": [
+        "Available exports"
+      ],
+      "buttonCount": 5,
+      "buttons": [
+        "Generate casebook",
+        "Preview report",
+        "Download inv-ghost_attacks_synthetic_v1 Casebook",
+        "Download inv-ghost_attacks_synthetic_v1 Casebook (printable)",
+        "Download Evaluation run"
+      ]
+    },
+    "Settings": {
+      "eyebrow": "SYSTEM / SETTINGS & SOURCE HEALTH",
+      "h1": "Tune your workspace.",
+      "panels": [
+        "Appearance",
+        "Connected systems",
+        "Investigation source",
+        "Security & data handling"
+      ],
+      "buttonCount": 6,
+      "buttons": [
+        "Light",
+        "Dark",
+        "Demo scenario",
+        "Simulation",
+        "Live wallet",
+        "Open investigation"
+      ]
+    }
+  },
+  "errors": [
+    "console: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "console: Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+}
