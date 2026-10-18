@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-10-17T22:51:16.207014+00:00",
+  "method": "Reproducible performance measurements for the DSA layer and the full engine.\n\n    python scripts/benchmark_dsa.py [--out artifacts/benchmarks/dsa.json] [--sizes 1000,10000,100000]\n\nGraphs: seeded random temporal multigraphs (n = edges/4 nodes, timestamps uniform over one day, one\nasset) plus the full engine on simulated investigations with growing noise. Wall-clock seconds from\ntime.perf_counter() (median of 3 runs); hardware/OS details are recorded with the results.",
+  "environment": {
+    "python": "3.13.16",
+    "machine": "x86_64",
+    "system": "Linux",
+    "processor": "x86_64",
+    "cpu_count": 2
+  },
+  "dsa": [
+    {
+      "edges": 1000,
+      "nodes": 250,
+      "build_index_s": 0.00105,
+      "bfs_neighbourhood_s": 0.00023,
+      "bfs_neighbourhood_nodes": 236,
+      "dfs_time_respecting_reach_s": 4e-05,
+      "reachable_nodes": 56,
+      "min_hop_layered_bfs_s": 0.0001,
+      "dijkstra_fastest_s": 6e-05,
+      "dijkstra_found": true,
+      "flow_decomposition_s": 0.00059,
+      "flow_conservation_ok": true,
+      "union_find_components_s": 0.00062,
+      "cycle_detection_s": 5e-05,
+      "top_k_heap_k10_s": 0.00034,
+      "full_sort_reference_s": 0.00024
+    },
+    {
+      "edges": 10000,
+      "nodes": 2500,
+      "build_index_s": 0.01406,
+      "bfs_neighbourhood_s": 0.00039,
+      "bfs_neighbourhood_nodes": 720,
+      "dfs_time_respecting_reach_s": 2e-05,
+      "reachable_nodes": 25,
+      "min_hop_layered_bfs_s": 4e-05,
+      "dijkstra_fastest_s": 3e-05,
+      "dijkstra_found": true,
+      "flow_decomposition_s": 0.00752,
+      "flow_conservation_ok": true,
+      "union_find_components_s": 0.00675,
+      "cycle_detection_s": 0.00075,
+      "top_k_heap_k10_s": 0.0033,
+      "full_sort_reference_s": 0.00349
+    },
+    {
+      "edges": 100000,
+      "nodes": 24988,
+      "build_index_s": 0.29459,
+      "bfs_neighbourhood_s": 0.00043,
+      "bfs_neighbourhood_nodes": 741,
+      "dfs_time_respecting_reach_s": 6e-05,
+      "reachable_nodes": 100,
+      "min_hop_layered_bfs_s": 0.00017,
+      "dijkstra_fastest_s": 0.00013,
+      "dijkstra_found": true,
+      "flow_decomposition_s": 0.15084,
+      "flow_conservation_ok": true,
+      "union_find_components_s": 0.12185,
+      "cycle_detection_s": 0.01251,
+      "top_k_heap_k10_s": 0.03331,
+      "full_sort_reference_s": 0.05014
+    }
+  ],
+  "engine": [
+    {
+      "noise_transfers": 20,
+      "events": 125,
+      "leads": 79,
+      "documents": 7,
+      "end_to_end_s": 0.0552
+    },
+    {
+      "noise_transfers": 2000,
+      "events": 2199,
+      "leads": 79,
+      "documents": 7,
+      "end_to_end_s": 0.1714
+    },
+    {
+      "noise_transfers": 20000,
+      "events": 21099,
+      "leads": 79,
+      "documents": 7,
+      "end_to_end_s": 1.2901
+    }
+  ]
+}
